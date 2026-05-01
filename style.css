@@ -1,0 +1,136 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #1f2c3d, #4ca1af);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.header h1 {
+    font-size: 44px;
+}
+
+.tagline {
+    margin: 10px 0 25px;
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+/* CONTACT */
+.contact-info a {
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* BUTTONS */
+.actions {
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 6px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.website {
+    background: white;
+    color: #333;
+}
+
+/* LINKS */
+.links {
+    margin-top: 10px;
+}
+
+.links a {
+    margin: 0 10px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+h2 {
+    margin-bottom: 15px;
+    border-left: 4px solid #4ca1af;
+    padding-left: 10px;
+}
+
+/* ITEMS */
+.item {
+    margin-bottom: 15px;
+}
+
+.item span {
+    display: block;
+    color: #666;
+    font-size: 14px;
+}
+
+/* LINKS IN CARDS */
+.card a {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 6px 12px;
+    background: #4ca1af;
+    color: white;
+    border-radius: 6px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .header h1 { font-size: 28px; }
+    .btn { width: 80%; }
+}
