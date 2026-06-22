@@ -1,0 +1,677 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Personal | Nikhil Parag"
+  description="The two sides of Nikhil Parag — Global Operator and Tech Builder."
+>
+  <main id="personal-main">
+    <!-- Split Hero Section -->
+    <section id="split-hero">
+      <!-- Left Side: The Lorekeeper -->
+      <a
+        href="#mangaanimewebtoon"
+        class="split-side split-left"
+        id="split-left"
+      >
+        <div class="split-bg split-bg-left"></div>
+        <div class="split-overlay split-overlay-left"></div>
+        <div class="split-content split-content-left">
+          <span class="split-label">The</span>
+          <h1 class="split-title">LoreKeeper</h1>
+          <p class="split-desc">
+            "Not all those who wander are lost."
+            <br />
+            <span>— J. R. R. Tolkien</span>
+          </p>
+          <ul class="split-traits">
+            <ul class="split-traits">
+              <li>🎌 Anime, Manga & Webtoons</li>
+              <li>🎮 Video Games & RPGs</li>
+              <li>🎲 Tabletop Games & D&D</li>
+              <li>🏰 Fantasy & Science Fiction</li>
+              <li>📜 Lore & Mythology</li>
+            </ul>
+          </ul>
+        </div>
+      </a>
+
+      <!-- Divider + Portrait -->
+      <div class="split-center">
+        <div class="split-portrait-ring">
+          <img src="/profile.jpg" alt="Nikhil Parag" class="split-portrait" />
+        </div>
+        <div class="split-name-badge">
+          <span>Nikhil Parag</span>
+        </div>
+      </div>
+
+      <!-- Right Side: The Seeker-->
+      <a href="/#work" class="split-side split-right" id="split-right">
+        <div class="split-bg split-bg-right"></div>
+        <div class="split-overlay split-overlay-right"></div>
+        <div class="split-content split-content-right">
+          <span class="split-label">The</span>
+          <h1 class="split-title">Seeker</h1>
+          <p class="split-desc">
+            "Nothing in life is to be feared, it is only to be understood."
+            <br />
+            <span>— Marie Curie</span>
+          </p>
+          <ul class="split-traits">
+            <ul class="split-traits">
+              <li>🚀 Space Exploration</li>
+              <li>🤖 Artificial Intelligence</li>
+              <li>📜 History & Civilizations</li>
+              <li>🏛️ Constitution & Polity</li>
+              <li>🌍 Geography & Geopolitics</li>
+              <li>🔬 Science & Discovery</li>
+              <li>📈 Economics & Society</li>
+              <li>🧠 Psychology & Human Behavior</li>
+            </ul>
+          </ul>
+        </div>
+      </a>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="mangaanimewebtoon" class="personal-philosophy">
+      <div class="philosophy-inner">
+        <span class="section-label">MANGAANIMEWEBTOON.COM</span>
+        <h2>The Stories We Love</h2>
+
+        <p class="section-description">
+          Exploring anime, manga, webtoons, manhwa, and the worlds that make
+          them unforgettable.
+        </p>
+
+        <a
+          href="https://mangaanimewebtoon.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="site-link"
+        >
+          Visit MangaAnimeWebtoon →
+        </a>
+
+        <div class="philosophy-grid">
+          <div class="philosophy-card">
+            <div class="philosophy-icon">🎌</div>
+            <h3>Anime</h3>
+            <p>
+              Where motion, music, and storytelling come together to create
+              unforgettable experiences that can only exist in animation.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon">📖</div>
+            <h3>Manga</h3>
+            <p>
+              The heart of countless stories. A medium where imagination and
+              artistry transform simple black-and-white pages into entire
+              worlds.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon">📱</div>
+            <h3>Webtoons</h3>
+            <p>
+              Modern storytelling for a digital generation, combining
+              accessibility, innovation, and fresh voices from around the world.
+            </p>
+          </div>
+        </div>
+
+        <!-- Currently Section -->
+        <section class="personal-currently">
+          <div class="currently-inner">
+            <span class="section-label">RIGHT NOW</span>
+            <h2>Currently</h2>
+            <div class="currently-grid">
+              <div class="currently-item">
+                <span class="currently-icon">📖</span>
+                <div>
+                  <h4>Reading</h4>
+                  <p>
+                    Lord of the Mysteries, Reverend Insanity, The Beginning
+                    After the End, Mother of Learning, and Shadow Slave.
+                  </p>
+                </div>
+              </div>
+
+              <div class="currently-item">
+                <span class="currently-icon">🏗️</span>
+                <div>
+                  <h4>writing</h4>
+                  <p>
+                    <a href="/the-second-young-master/" class="story-link">
+                      The Second Young Master
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <style>
+      /* =============================================
+     PERSONAL PAGE - SPLIT HERO
+  ============================================= */
+
+      #personal-main {
+        min-height: 100vh;
+      }
+
+      #split-hero {
+        position: relative;
+        display: flex;
+        align-items: stretch;
+        height: 100vh;
+        min-height: 600px;
+        overflow: hidden;
+      }
+
+      /* ---- Sides ---- */
+
+      .split-side {
+        position: relative;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        cursor: pointer;
+        transition: flex 0.6s cubic-bezier(0.77, 0, 0.18, 1);
+        text-decoration: none;
+        color: inherit;
+      }
+
+      #split-hero:has(.split-left:hover) .split-left {
+        flex: 1.6;
+      }
+
+      #split-hero:has(.split-left:hover) .split-right {
+        flex: 0.4;
+      }
+
+      #split-hero:has(.split-right:hover) .split-right {
+        flex: 1.6;
+      }
+
+      #split-hero:has(.split-right:hover) .split-left {
+        flex: 0.4;
+      }
+
+      /* ---- Backgrounds ---- */
+
+      .split-bg {
+        position: absolute;
+        inset: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .split-bg-left {
+        background: linear-gradient(
+          135deg,
+          hsl(220, 40%, 6%) 0%,
+          hsl(225, 35%, 10%) 100%
+        );
+      }
+
+      .split-bg-right {
+        background: linear-gradient(
+          135deg,
+          hsl(0, 0%, 5%) 0%,
+          hsl(0, 0%, 9%) 100%
+        );
+      }
+
+      /* Noise texture overlay */
+      .split-overlay {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.35;
+        transition: opacity 0.5s ease;
+      }
+
+      .split-overlay-left {
+        background:
+          radial-gradient(
+            ellipse at 20% 60%,
+            rgba(99, 132, 255, 0.18),
+            transparent 65%
+          ),
+          radial-gradient(
+            ellipse at 80% 20%,
+            rgba(60, 100, 220, 0.1),
+            transparent 55%
+          );
+      }
+
+      .split-overlay-right {
+        background:
+          radial-gradient(
+            ellipse at 80% 60%,
+            rgba(200, 255, 120, 0.1),
+            transparent 65%
+          ),
+          radial-gradient(
+            ellipse at 20% 20%,
+            rgba(255, 220, 80, 0.07),
+            transparent 55%
+          );
+      }
+
+      .split-side:hover .split-overlay-left {
+        opacity: 0.7;
+      }
+
+      .split-side:hover .split-overlay-right {
+        opacity: 0.7;
+      }
+
+      /* Vertical divider line */
+      #split-hero::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: linear-gradient(
+          to bottom,
+          transparent,
+          rgba(255, 255, 255, 0.15) 30%,
+          rgba(255, 255, 255, 0.15) 70%,
+          transparent
+        );
+        z-index: 5;
+        pointer-events: none;
+      }
+
+      /* ---- Content ---- */
+
+      .split-content {
+        position: relative;
+        z-index: 3;
+        padding: 48px;
+        transition:
+          opacity 0.4s ease,
+          transform 0.5s ease;
+      }
+
+      .split-content-left {
+        padding-left: clamp(32px, 6vw, 96px);
+        padding-right: 80px;
+      }
+
+      .split-content-right {
+        padding-right: clamp(32px, 6vw, 96px);
+        padding-left: 80px;
+      }
+
+      #split-hero:has(.split-right:hover) .split-content-left {
+        opacity: 0.25;
+        transform: translateX(-12px);
+      }
+
+      #split-hero:has(.split-left:hover) .split-content-right {
+        opacity: 0.25;
+        transform: translateX(12px);
+      }
+
+      .split-label {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+
+      .split-title {
+        font-size: clamp(2.8rem, 5vw, 5rem);
+        font-weight: 800;
+        line-height: 1;
+        letter-spacing: -0.03em;
+        margin: 0 0 20px;
+        color: var(--text);
+      }
+
+      .split-right .split-title {
+        color: hsl(80, 80%, 70%);
+      }
+
+      .split-left .split-title {
+        color: hsl(220, 85%, 75%);
+      }
+
+      .split-desc {
+        font-size: 1rem;
+        color: var(--muted);
+        max-width: 320px;
+        line-height: 1.65;
+        margin: 0 0 28px;
+      }
+
+      .split-traits {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .split-traits li {
+        font-size: 0.9rem;
+        color: var(--muted);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: color 0.25s ease;
+      }
+
+      .split-side:hover .split-traits li {
+        color: var(--text);
+      }
+
+      /* ---- Center Portrait ---- */
+
+      .split-center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        pointer-events: none;
+      }
+
+      .split-portrait-ring {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        padding: 3px;
+        background: linear-gradient(
+          135deg,
+          hsl(220, 85%, 65%),
+          hsl(80, 70%, 60%)
+        );
+        box-shadow:
+          0 0 0 1px rgba(255, 255, 255, 0.08),
+          0 20px 60px rgba(0, 0, 0, 0.6);
+        transition:
+          transform 0.4s ease,
+          box-shadow 0.4s ease;
+      }
+
+      #split-hero:has(.split-left:hover) .split-portrait-ring {
+        box-shadow:
+          0 0 0 4px hsl(220, 85%, 55%),
+          0 20px 60px rgba(0, 0, 0, 0.6);
+        transform: scale(1.08);
+      }
+
+      #split-hero:has(.split-right:hover) .split-portrait-ring {
+        box-shadow:
+          0 0 0 4px hsl(80, 70%, 55%),
+          0 20px 60px rgba(0, 0, 0, 0.6);
+        transform: scale(1.08);
+      }
+
+      .split-portrait {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .split-name-badge {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(12px);
+        border-radius: 999px;
+        padding: 6px 16px;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        color: var(--muted);
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      /* =============================================
+     PHILOSOPHY SECTION
+  ============================================= */
+
+      .personal-philosophy {
+        padding: 120px 0;
+        border-top: 1px solid var(--border);
+      }
+
+      .philosophy-inner {
+        width: min(var(--max-width), calc(100% - 48px));
+        margin-inline: auto;
+      }
+
+      .philosophy-inner h2 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        margin: 0 0 60px;
+        line-height: 1.1;
+      }
+
+      .philosophy-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 24px;
+      }
+
+      .philosophy-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 36px 32px;
+        transition:
+          transform 0.25s ease,
+          border-color 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .philosophy-card:hover {
+        transform: translateY(-6px);
+        border-color: var(--border-hover);
+        box-shadow:
+          0 0 0 1px rgba(255, 255, 255, 0.03),
+          0 20px 40px rgba(0, 0, 0, 0.35);
+      }
+
+      .philosophy-icon {
+        font-size: 2rem;
+        margin-bottom: 16px;
+      }
+
+      .philosophy-card h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 0 0 12px;
+        letter-spacing: -0.01em;
+      }
+
+      .philosophy-card p {
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.65;
+        margin: 0;
+      }
+
+      /* =============================================
+     CURRENTLY SECTION
+  ============================================= */
+
+      .personal-currently {
+        padding: 0 0 120px;
+      }
+
+      .currently-inner {
+        width: min(var(--max-width), calc(100% - 48px));
+        margin-inline: auto;
+      }
+
+      .currently-inner h2 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        margin: 0 0 48px;
+        line-height: 1.1;
+      }
+
+      .currently-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+      }
+
+      .currently-item {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 28px;
+        transition:
+          transform 0.25s ease,
+          border-color 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .currently-item:hover {
+        transform: translateY(-4px);
+        border-color: var(--border-hover);
+        box-shadow:
+          0 0 0 1px rgba(255, 255, 255, 0.03),
+          0 16px 32px rgba(0, 0, 0, 0.3);
+      }
+
+      .currently-icon {
+        font-size: 1.6rem;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      .currently-item h4 {
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 6px;
+      }
+
+      .currently-item p {
+        font-size: 0.95rem;
+        color: var(--text);
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .story-link {
+        color: var(--text);
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: rgba(255, 255, 255, 0.35);
+        text-underline-offset: 4px;
+        transition:
+          color 0.2s ease,
+          text-decoration-color 0.2s ease;
+      }
+
+      .story-link:hover,
+      .story-link:focus-visible {
+        color: #fff;
+        text-decoration-color: #fff;
+      }
+
+      /* =============================================
+     MOBILE RESPONSIVE
+  ============================================= */
+
+      @media (max-width: 768px) {
+        #split-hero {
+          flex-direction: column;
+          height: auto;
+          min-height: auto;
+        }
+
+        #split-hero::after {
+          left: 0;
+          right: 0;
+          top: 50%;
+          bottom: auto;
+          width: auto;
+          height: 1px;
+          background: linear-gradient(
+            to right,
+            transparent,
+            rgba(255, 255, 255, 0.15) 30%,
+            rgba(255, 255, 255, 0.15) 70%,
+            transparent
+          );
+        }
+
+        .split-side {
+          min-height: 50vh;
+        }
+
+        #split-hero:has(.split-left:hover) .split-left,
+        #split-hero:has(.split-right:hover) .split-right {
+          flex: 1;
+        }
+
+        #split-hero:has(.split-left:hover) .split-right,
+        #split-hero:has(.split-right:hover) .split-left {
+          flex: 1;
+        }
+
+        #split-hero:has(.split-right:hover) .split-content-left,
+        #split-hero:has(.split-left:hover) .split-content-right {
+          opacity: 1;
+          transform: none;
+        }
+
+        .split-center {
+          position: relative;
+          left: auto;
+          top: auto;
+          transform: none;
+          margin: -60px auto;
+          z-index: 10;
+        }
+
+        .split-content-left,
+        .split-content-right {
+          padding: 48px 28px;
+        }
+
+        .personal-philosophy,
+        .personal-currently {
+          padding: 72px 0;
+        }
+      }
+    </style>
+  </main></Layout
+>

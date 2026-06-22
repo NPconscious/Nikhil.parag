@@ -1,0 +1,32 @@
+---
+const currentPath = Astro.url?.pathname ?? '/';
+---
+<header class="navbar">
+  <div class="container nav-container">
+    <a href="/" class="logo">
+      <img src="/logo.png" alt="NPconscious Logo">
+      <div class="logo-content">
+        <span>Nikhil Parag</span>
+        <small>NPconscious</small>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <a href="/#mission">Mission</a>
+      <a href="/#building">Building</a>
+      <a href="/#work">Work</a>
+      <a href="/#experience">Experience</a>
+      <a href="/#contact">Contact</a>
+      <a href="/personal" class={currentPath === '/personal' ? 'nav-active' : ''}>Personal</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="menuToggle"
+      class="menu-toggle"
+      aria-label="Open menu">
+      ☰
+    </button>
+  </div>
+</header>
