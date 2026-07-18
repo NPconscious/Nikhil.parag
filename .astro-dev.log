@@ -1,0 +1,121 @@
+
+> nikhil-parag-portfolio@1.0.0 dev
+> astro dev --host 127.0.0.1
+
+[2m05:40:37[22m [34m[types][39m Generated [2m2ms[22m
+[2m05:40:37[22m [34m[content][39m Syncing content
+[2m05:40:37[22m [34m[content][39m Astro config changed
+[2m05:40:37[22m [34m[content][39m Clearing content store
+[2m05:40:37[22m [34m[content][39m Synced content
+[2m05:40:37[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+
+[42m[1m astro [22m[49m [32mv5.18.2[39m [2mready in[22m 584 [2mms[22m
+
+[2m┃[22m Local    [36mhttp://127.0.0.1:4321/[39m
+
+[2m05:40:37[22m [32mwatching for file changes...[39m
+
+[43m[30m update [39m[49m [33m▶ New version of Astro available: 7.1.1[39m
+  Run [36mnpx @astrojs/upgrade[39m to update
+
+[2m05:41:02[22m [34m[200][39m /the-second-young-master/ [2m32ms[22m
+[2m05:41:04[22m [34m[200][39m /personal [2m8ms[22m
+[2m05:41:16[22m [34m[200][39m /personal [2m20ms[22m
+[2m05:41:19[22m [34m[200][39m /personal [2m8ms[22m
+[2m05:41:23[22m [34m[200][39m /the-second-young-master/ [2m6ms[22m
+[2m05:43:58[22m [34m[watch][39m /src/pages/the-second-young-master.astro?astro&type=style&index=0&lang.css
+[2m05:43:59[22m [34m[200][39m /personal [2m15ms[22m
+[2m05:44:00[22m [34m[200][39m /the-second-young-master/ [2m26ms[22m
+[2m05:45:42[22m [34m[watch][39m /src/pages/the-second-young-master.astro?astro&type=style&index=0&lang.css
+[2m05:45:43[22m [34m[200][39m /personal [2m8ms[22m
+[2m05:45:44[22m [34m[200][39m /the-second-young-master/ [2m29ms[22m
+[2m05:47:48[22m [34m[200][39m /personal [2m19ms[22m
+[2m05:47:53[22m [34m[200][39m /the-second-young-master/ [2m5ms[22m
+[2m05:47:57[22m [34m[watch][39m /src/pages/the-second-young-master.astro?astro&type=style&index=0&lang.css
+[2m05:47:58[22m [34m[200][39m /personal [2m7ms[22m
+[2m05:47:59[22m [34m[200][39m /the-second-young-master/ [2m21ms[22m
+[2m05:52:00[22m [34m[200][39m /the-second-young-master/ [2m8ms[22m
+[2m05:52:08[22m [34m[200][39m /the-second-young-master/ [2m7ms[22m
+[2m05:56:31[22m [34m[watch][39m /src/pages/the-second-young-master.astro?astro&type=style&index=0&lang.css
+[2m05:56:31[22m [34m[200][39m /the-second-young-master/ [2m15ms[22m
+[2m05:56:32[22m [34m[200][39m /personal [2m12ms[22m
+[2m05:56:32[22m [34m[200][39m /the-second-young-master/ [2m16ms[22m
+[2m05:58:18[22m [34m[200][39m /the-second-young-master/chapter-1/ [2m8ms[22m
+[2m06:02:02[22m [34m[200][39m /personal [2m4ms[22m
+[2m06:02:07[22m [34m[200][39m /the-second-young-master/ [2m3ms[22m
+[2m06:03:32[22m [34m[watch][39m /src/styles/global.css
+[2m06:03:32[22m [34m[200][39m /the-second-young-master/ [2m13ms[22m
+[2m06:03:33[22m [34m[200][39m /personal [2m10ms[22m
+[2m06:03:33[22m [34m[200][39m /the-second-young-master/ [2m8ms[22m
+[2m06:03:43[22m [34m[200][39m /the-second-young-master/ [2m4ms[22m
+[2m06:04:15[22m [34m[200][39m / [2m3ms[22m
+[2m06:04:18[22m [34m[watch][39m /src/styles/global.css
+[2m06:04:18[22m [34m[200][39m / [2m11ms[22m
+[2m06:04:19[22m [34m[200][39m /the-second-young-master/ [2m8ms[22m
+[2m06:04:19[22m [34m[200][39m /the-second-young-master/ [2m11ms[22m
+[2m06:04:35[22m [34m[200][39m / [2m6ms[22m
+[2m06:04:54[22m [34m[200][39m /personal [2m7ms[22m
+[2m06:04:58[22m [34m[200][39m /the-second-young-master/ [2m6ms[22m
+[2m06:07:10[22m [34m[watch][39m /src/pages/the-second-young-master.astro?astro&type=style&index=0&lang.css
+[2m06:07:10[22m [34m[watch][39m /src/pages/the-second-young-master/chapter-1.astro?astro&type=style&index=0&lang.css
+[2m06:07:10[22m [34m[200][39m /the-second-young-master/ [2m8ms[22m
+[2m06:07:11[22m [34m[200][39m /the-second-young-master/ [2m11ms[22m
+[2m06:07:11[22m [34m[200][39m / [2m12ms[22m
+[2m06:07:24[22m [34m[200][39m /the-second-young-master/chapter-2/ [2m8ms[22m
+[2m06:08:39[22m [34m[watch][39m /src/styles/global.css
+[2m06:08:39[22m [34m[watch][39m /src/pages/the-second-young-master/chapter-1.astro?astro&type=style&index=0&lang.css
+[2m06:08:39[22m [34m[watch][39m /src/pages/the-second-young-master/chapter-2.astro?astro&type=style&index=0&lang.css
+[2m06:08:39[22m [34m[watch][39m /src/pages/the-second-young-master.astro?astro&type=style&index=0&lang.css
+[2m06:08:39[22m [34m[200][39m / [2m39ms[22m
+[2m06:08:39[22m [34m[200][39m /the-second-young-master/ [2m19ms[22m
+[2m06:08:39[22m [34m[200][39m /the-second-young-master/chapter-2/ [2m25ms[22m
+[2m06:09:34[22m [34m[watch][39m /src/pages/the-second-young-master.astro?astro&type=style&index=0&lang.css
+[2m06:09:34[22m [34m[200][39m /the-second-young-master/chapter-2/ [2m4ms[22m
+[2m06:09:35[22m [34m[200][39m / [2m8ms[22m
+[2m06:09:35[22m [34m[200][39m /the-second-young-master/ [2m19ms[22m
+[2m06:09:52[22m [34m[200][39m /the-second-young-master/ [2m3ms[22m
+[2m06:10:14[22m [34m[200][39m /personal [2m8ms[22m
+[2m06:10:18[22m [34m[200][39m /the-second-young-master/ [2m4ms[22m
+[2m06:10:49[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m9ms[22m
+[2m06:10:56[22m [34m[200][39m /the-second-young-master/chapter-2/ [2m3ms[22m
+[2m06:11:04[22m [34m[200][39m /personal [2m3ms[22m
+[2m06:11:48[22m [34m[watch][39m /src/pages/the-second-young-master/chapter-2.astro?astro&type=style&index=0&lang.css
+[2m06:11:48[22m [34m[200][39m /the-second-young-master/ [2m5ms[22m
+[2m06:11:49[22m [34m[200][39m /the-second-young-master/ [2m9ms[22m
+[2m06:11:49[22m [34m[200][39m /personal [2m10ms[22m
+[2m06:11:53[22m [34m[200][39m /the-second-young-master/chapter-2/ [2m14ms[22m
+[2m06:12:05[22m [34m[200][39m /the-second-young-master/chapter-1/ [2m9ms[22m
+[2m06:12:26[22m [34m[200][39m /the-second-young-master/chapter-2/ [2m3ms[22m
+[2m06:12:35[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m2ms[22m
+[2m06:15:23[22m [34m[watch][39m /src/pages/the-second-young-master/chapter-2.astro?astro&type=style&index=0&lang.css
+[2m06:15:23[22m [34m[watch][39m /src/pages/the-second-young-master/chapter-3.astro?astro&type=style&index=0&lang.css
+[2m06:15:23[22m [34m[watch][39m /src/pages/the-second-young-master.astro?astro&type=style&index=0&lang.css
+[2m06:15:23[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m5ms[22m
+[2m06:15:24[22m [34m[200][39m /personal [2m12ms[22m
+[2m06:15:24[22m [34m[200][39m /the-second-young-master/ [2m50ms[22m
+[2m06:21:51[22m [34m[200][39m /personal [2m4ms[22m
+[2m06:21:54[22m [34m[200][39m /the-second-young-master/ [2m4ms[22m
+[2m06:21:57[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m6ms[22m
+[2m06:29:22[22m [34m[200][39m /the-second-young-master/ [2m5ms[22m
+[2m06:29:25[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m3ms[22m
+[2m06:29:34[22m [34m[watch][39m /src/pages/the-second-young-master/chapter-3.astro?astro&type=style&index=0&lang.css
+[2m06:29:35[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m18ms[22m
+[2m06:29:35[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m20ms[22m
+[2m06:29:35[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m14ms[22m
+[2m06:33:46[22m [34m[watch][39m /src/pages/the-second-young-master/chapter-3.astro?astro&type=style&index=0&lang.css
+[2m06:33:46[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m19ms[22m
+[2m06:33:46[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m21ms[22m
+[2m06:33:46[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m20ms[22m
+[2m06:33:55[22m [34m[watch][39m /src/pages/the-second-young-master/chapter-3.astro?astro&type=style&index=0&lang.css
+[2m06:33:56[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m24ms[22m
+[2m06:33:56[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m27ms[22m
+[2m06:33:56[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m12ms[22m
+[2m06:39:21[22m [34m[200][39m /personal [2m3ms[22m
+[2m06:39:24[22m [34m[200][39m /the-second-young-master/ [2m3ms[22m
+[2m06:39:28[22m [34m[200][39m /the-second-young-master/chapter-1/ [2m4ms[22m
+[2m06:39:43[22m [34m[200][39m /the-second-young-master/chapter-2/ [2m7ms[22m
+[2m06:41:28[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m2ms[22m
+[2m06:45:28[22m [34m[watch][39m /src/pages/the-second-young-master/chapter-3.astro?astro&type=style&index=0&lang.css
+[2m06:45:29[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m19ms[22m
+[2m06:45:29[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m26ms[22m
+[2m06:45:29[22m [34m[200][39m /the-second-young-master/chapter-3/ [2m9ms[22m
