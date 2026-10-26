@@ -850,8 +850,6 @@ import Layout from "../layouts/Layout.astro";
       <div class="timeline">
         <div class="timeline-item">
           <h3>BE Information Science</h3>
-          <h3>&</h3>
-          <p>Diploma in human behaviour</p>
         </div>
 
         <div class="timeline-item">
@@ -1143,7 +1141,8 @@ import Layout from "../layouts/Layout.astro";
     }
 
     @keyframes sparklePulse {
-      0%, 100% {
+      0%,
+      100% {
         opacity: 0.7;
         transform: scale(1);
       }
@@ -1175,7 +1174,9 @@ import Layout from "../layouts/Layout.astro";
     .personal-arrow {
       font-size: 0.85rem;
       color: #a1a1aa;
-      transition: transform 0.2s ease, color 0.2s ease;
+      transition:
+        transform 0.2s ease,
+        color 0.2s ease;
     }
 
     .panel-personal-btn:hover .personal-arrow {
@@ -1208,7 +1209,9 @@ import Layout from "../layouts/Layout.astro";
       width: 15px;
       height: 15px;
       filter: invert(0.65);
-      transition: filter 0.2s ease, transform 0.2s ease;
+      transition:
+        filter 0.2s ease,
+        transform 0.2s ease;
     }
 
     .panel-contact-icon:hover {
@@ -1279,7 +1282,9 @@ import Layout from "../layouts/Layout.astro";
         visibility: hidden;
         pointer-events: none;
         box-shadow: none;
-        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+        transition:
+          transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+          visibility 0.3s;
       }
 
       .left-panel.is-open {
@@ -1396,23 +1401,30 @@ import Layout from "../layouts/Layout.astro";
 
   <script>
     function setupNavigation() {
-      const navLinks = document.querySelectorAll('.panel-link');
-      const sectionIds = ['hero', 'mission', 'work', 'experience', 'education', 'contact'];
+      const navLinks = document.querySelectorAll(".panel-link");
+      const sectionIds = [
+        "hero",
+        "mission",
+        "work",
+        "experience",
+        "education",
+        "contact",
+      ];
       const sections = sectionIds
         .map((id) => document.getElementById(id))
         .filter((el) => el !== null);
 
-      let currentActiveId = '';
+      let currentActiveId = "";
 
       function setActive(id) {
         if (currentActiveId === id) return;
         currentActiveId = id;
         navLinks.forEach((link) => {
-          const targetSection = link.getAttribute('data-section');
+          const targetSection = link.getAttribute("data-section");
           if (targetSection === id) {
-            link.classList.add('active');
+            link.classList.add("active");
           } else {
-            link.classList.remove('active');
+            link.classList.remove("active");
           }
         });
       }
@@ -1423,29 +1435,29 @@ import Layout from "../layouts/Layout.astro";
           const visibleEntries = entries.filter((e) => e.isIntersecting);
           if (visibleEntries.length > 0) {
             const topEntry = visibleEntries.reduce((prev, curr) =>
-              curr.intersectionRatio > prev.intersectionRatio ? curr : prev
+              curr.intersectionRatio > prev.intersectionRatio ? curr : prev,
             );
             setActive(topEntry.target.id);
           }
         },
         {
-          rootMargin: '-15% 0px -65% 0px',
+          rootMargin: "-15% 0px -65% 0px",
           threshold: [0, 0.2, 0.5, 0.8],
-        }
+        },
       );
 
       sections.forEach((sec) => observer.observe(sec));
 
       // Smooth scroll on link click
       navLinks.forEach((link) => {
-        link.addEventListener('click', (e) => {
-          const targetId = link.getAttribute('data-section');
+        link.addEventListener("click", (e) => {
+          const targetId = link.getAttribute("data-section");
           if (!targetId) return;
           const targetEl = document.getElementById(targetId);
           if (targetEl) {
             e.preventDefault();
-            targetEl.scrollIntoView({ behavior: 'smooth' });
-            history.pushState(null, '', '#' + targetId);
+            targetEl.scrollIntoView({ behavior: "smooth" });
+            history.pushState(null, "", "#" + targetId);
             setActive(targetId);
             closeMobileNav();
           }
@@ -1453,30 +1465,30 @@ import Layout from "../layouts/Layout.astro";
       });
 
       // Mobile nav drawer open / close
-      const toggleBtn = document.getElementById('mobile-nav-toggle');
-      const toggleText = document.getElementById('mobile-toggle-text');
-      const toggleIcon = document.getElementById('mobile-toggle-icon');
-      const panel = document.getElementById('left-panel');
-      const backdrop = document.getElementById('nav-backdrop');
+      const toggleBtn = document.getElementById("mobile-nav-toggle");
+      const toggleText = document.getElementById("mobile-toggle-text");
+      const toggleIcon = document.getElementById("mobile-toggle-icon");
+      const panel = document.getElementById("left-panel");
+      const backdrop = document.getElementById("nav-backdrop");
 
       function openMobileNav() {
-        panel?.classList.add('is-open');
-        backdrop?.classList.add('is-open');
-        toggleBtn?.setAttribute('aria-expanded', 'true');
-        if (toggleText) toggleText.textContent = 'Close';
-        if (toggleIcon) toggleIcon.textContent = '✕';
+        panel?.classList.add("is-open");
+        backdrop?.classList.add("is-open");
+        toggleBtn?.setAttribute("aria-expanded", "true");
+        if (toggleText) toggleText.textContent = "Close";
+        if (toggleIcon) toggleIcon.textContent = "✕";
       }
 
       function closeMobileNav() {
-        panel?.classList.remove('is-open');
-        backdrop?.classList.remove('is-open');
-        toggleBtn?.setAttribute('aria-expanded', 'false');
-        if (toggleText) toggleText.textContent = 'Menu';
-        if (toggleIcon) toggleIcon.textContent = '☰';
+        panel?.classList.remove("is-open");
+        backdrop?.classList.remove("is-open");
+        toggleBtn?.setAttribute("aria-expanded", "false");
+        if (toggleText) toggleText.textContent = "Menu";
+        if (toggleIcon) toggleIcon.textContent = "☰";
       }
 
-      toggleBtn?.addEventListener('click', () => {
-        const isOpen = panel?.classList.contains('is-open');
+      toggleBtn?.addEventListener("click", () => {
+        const isOpen = panel?.classList.contains("is-open");
         if (isOpen) {
           closeMobileNav();
         } else {
@@ -1484,14 +1496,14 @@ import Layout from "../layouts/Layout.astro";
         }
       });
 
-      backdrop?.addEventListener('click', closeMobileNav);
+      backdrop?.addEventListener("click", closeMobileNav);
     }
 
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', setupNavigation);
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", setupNavigation);
     } else {
       setupNavigation();
     }
-    document.addEventListener('astro:after-swap', setupNavigation);
+    document.addEventListener("astro:after-swap", setupNavigation);
   </script>
 </Layout>
