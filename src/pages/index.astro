@@ -1,24 +1,140 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Nikhil Parag" description="Founder of NPconscious - Information Science graduate with experience in international operations, customer success, and global sales.">
+<Layout
+  title="Nikhil Parag"
+  description="Founder of NPconscious - Information Science graduate with experience in international operations, customer success, and global sales."
+>
+  <!-- Mobile Navigation Toggle Button -->
+  <button
+    id="mobile-nav-toggle"
+    class="mobile-nav-toggle"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+  >
+    <span id="mobile-toggle-icon" class="hamburger-icon">☰</span>
+    <span id="mobile-toggle-text">Menu</span>
+  </button>
+
+  <!-- Mobile Navigation Backdrop -->
+  <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- Left Navigation Panel -->
+  <aside id="left-panel" class="left-panel" aria-label="Main Navigation">
+    <div class="panel-header">
+      <a href="/#" class="panel-brand">
+        <div class="avatar-ring">
+          <img src="/profile.jpg" alt="Nikhil Parag" class="panel-avatar" />
+          <span class="status-indicator" title="Open to opportunities"></span>
+        </div>
+        <div class="panel-brand-text">
+          <span class="brand-name">Nikhil Parag</span>
+          <span class="brand-title">Founder · NPconscious</span>
+        </div>
+      </a>
+    </div>
+
+    <nav class="panel-nav">
+      <span class="panel-nav-heading">Navigation</span>
+      <ul class="nav-list">
+        <li>
+          <a href="#mission" class="panel-link" data-section="mission">
+            <span class="link-dot"></span>
+            <span class="link-text">Mission</span>
+          </a>
+        </li>
+        <li>
+          <a href="#work" class="panel-link" data-section="work">
+            <span class="link-dot"></span>
+            <span class="link-text">Work</span>
+          </a>
+        </li>
+        <li>
+          <a href="#experience" class="panel-link" data-section="experience">
+            <span class="link-dot"></span>
+            <span class="link-text">Experience</span>
+          </a>
+        </li>
+        <li>
+          <a href="#education" class="panel-link" data-section="education">
+            <span class="link-dot"></span>
+            <span class="link-text">Education</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="panel-link" data-section="contact">
+            <span class="link-dot"></span>
+            <span class="link-text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="panel-footer">
+      <a href="/personal" class="panel-personal-btn">
+        <div class="personal-btn-content">
+          <span class="personal-sparkle">✦</span>
+          <div class="personal-btn-text">
+            <span class="personal-btn-label">The Lorekeeper</span>
+            <span class="personal-btn-sub">Manga, Gaming & Lore</span>
+          </div>
+        </div>
+        <span class="personal-arrow">→</span>
+      </a>
+
+      <div class="panel-quick-contacts">
+        <a
+          href="https://wa.me/918088276492"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="WhatsApp"
+          class="panel-contact-icon"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg"
+            alt="WhatsApp"
+          />
+        </a>
+        <a
+          href="mailto:nikhilparag0@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Email"
+          class="panel-contact-icon"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg"
+            alt="Email"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/nikhil_lord_of_edo/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Instagram"
+          class="panel-contact-icon"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg"
+            alt="Instagram"
+          />
+        </a>
+      </div>
+    </div>
+  </aside>
+
   <main id="main">
-    <section class="hero">
-      <img
-        src="/profile.jpg"
-        alt="Nikhil Parag"
-        class="hero-image"
-      />
+    <section id="hero" class="hero">
+      <img src="/profile.jpg" alt="Nikhil Parag" class="hero-image" />
 
       <h1>Nikhil Parag</h1>
 
-      <p class="eyebrow">
-        Founder of NPconscious
-      </p>
+      <p class="eyebrow">Founder of NPconscious</p>
 
       <p class="hero-description">
-        Information Science graduate with experience in international operations, customer success, and global sales.
+        Information Science graduate with experience in international
+        operations, customer success, and global sales.
       </p>
 
       <div class="hero-actions">
@@ -30,268 +146,717 @@ import Layout from '../layouts/Layout.astro';
           Explore NPconscious
         </a>
 
-        <a
-          href="#contact"
-          class="btn btn-secondary"
-        >
-          Get In Touch
-        </a>
+        <a href="#contact" class="btn btn-secondary"> Get In Touch </a>
       </div>
     </section>
 
     <section id="mission" class="section">
       <div class="content">
-        <span class="section-label">
-          MISSION
-        </span>
+        <span class="section-label"> MISSION </span>
 
-        <h2>
-          What Drives Me
-        </h2>
+        <h2>What Drives Me</h2>
 
         <p>
           Education should create independent thinkers, not dependent learners.
         </p>
 
         <p>
-          Through technology, mentorship and practical problem solving, I aim to create learning experiences that remain valuable long after the classroom ends.
-        </p>
-      </div>
-    </section>
-
-    <section id="building" class="section">
-      <div class="content">
-        <span class="section-label">
-          WHAT I'M BUILDING
-        </span>
-
-        <h2>
-          NPconscious
-        </h2>
-
-        <p>
-          NPconscious is focused on curiosity-driven learning, technology-enabled education and long-term personal growth.
-        </p>
-
-        <p>
-          The goal is simple: help people become better thinkers, learners and decision makers.
-        </p>
-      </div>
-    </section>
-
-    <section class="stats">
-      <div class="stat">
-        <h3>1000+</h3>
-        <p>
-          Operational Cases Resolved
-        </p>
-      </div>
-
-      <div class="stat">
-        <h3>20+</h3>
-        <p>
-          People Coordinated
-        </p>
-      </div>
-
-      <div class="stat">
-        <h3>2</h3>
-        <p>
-          International Roles
-        </p>
-      </div>
-
-      <div class="stat">
-        <h3>1</h3>
-        <p>
-          Published Research Paper
+          Through technology, mentorship and practical problem solving, I aim to
+          create learning experiences that remain valuable long after the
+          classroom ends.
         </p>
       </div>
     </section>
 
     <section id="work" class="section">
-      <span class="section-label">
-        MY WORK
-      </span>
+      <span class="section-label"> MY WORK </span>
 
-      <h2>
-        completed projects
-      </h2>
+      <h2>completed projects</h2>
 
       <div class="project-grid">
         <article class="project featured">
-          <span>
-            Research
-          </span>
+          <span> Research </span>
 
           <h3>
-            Signature Forgery Detection
+            <a
+              href="https://www.ijcrt.org/author_details.php?name=Nikhil%20Parag&slot=3"
+            >
+              Signature Forgery Detection</a
+            >
           </h3>
 
           <p>
-            Published machine learning research using One-shot Learning to identify forged signatures in the International Journal of Creative Research Thoughts (ISSN: 2320-2882).
+            Published machine learning research using One-shot Learning to
+            identify forged signatures in the International Journal of Creative
+            Research Thoughts (ISSN: 2320-2882).
           </p>
         </article>
 
         <article class="project">
-          <span> DBMS </span>
+          <span> Edtech </span>
 
-          <h3>
-            Blood Bank Management System
-          </h3>
+          <h3><a href="https://npconscious.com">NPconscious.com</a></h3>
           <div class="project-tags">
-            <span class="tag">PHP</span>
-            <span class="tag">MySQL</span>
-            <span class="tag">XAMPP</span>
-          </div>
-
-          <h3>
-            Placement Management System
-          </h3>
-          <div class="project-tags">
-            <span class="tag">Java Swing</span>
-            <span class="tag">MySQL</span>
+            <span class="tag">1-12 standard Mathematics </span>
+            <span class="tag">No age limit</span>
+            <span class="tag">Student first</span>
+            <span class="tag">Engineering Mathematics</span>
           </div>
         </article>
 
         <article class="project">
-          <span> Tools </span>
+          <span> Entertainment </span>
 
-          <h3>Car emi calculator</h3>
+          <h3>
+            <a href="https://mangaanimewebtoon.com">mangaanimewebtoon.com</a>
+          </h3>
           <div class="project-tags">
-            <span class="tag">Android Studio</span>
-            <span class="tag">Java</span>
+            <span class="tag">Manga community</span>
+            <span class="tag">Webtoon community</span>
+            <span class="tag">Anime community</span>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section">
-      <span class="section-label">
-        What I'm Exploring
-      </span>
+    <!-- My Sales Journey — Visual Journey Map -->
+    <section id="experience" class="journey-section">
+      <div class="journey-inner">
+        <span class="section-label">Work experience</span>
+        <h2 class="journey-heading">My Career Journey</h2>
+        <p class="journey-subheading">
+          From Operations at Concentrix(Airbnb) to International Sales at
+          Bhanzu(US & UK), then Study Abroad Counselling at USDC (Learn
+          Overseas)
+        </p>
 
-      <h2>Areas of Focus</h2>
+        <!-- Metrics Strip -->
+        <div class="journey-metrics-strip">
+          <div class="jmetric">
+            <span class="jmetric-num">5,000+</span>
+            <span class="jmetric-lbl">Calls Handled Across Roles</span>
+          </div>
+          <div class="jmetric-divider" aria-hidden="true"></div>
+          <div class="jmetric">
+            <span class="jmetric-num">1,000+</span>
+            <span class="jmetric-lbl">Operational Cases Resolved</span>
+          </div>
+          <div class="jmetric-divider" aria-hidden="true"></div>
+          <div class="jmetric">
+            <span class="jmetric-num">20+</span>
+            <span class="jmetric-lbl">People Coordinated</span>
+          </div>
+          <div class="jmetric-divider" aria-hidden="true"></div>
+          <div class="jmetric">
+            <span class="jmetric-num">3</span>
+            <span class="jmetric-lbl">International Roles</span>
+          </div>
+          <div class="jmetric-divider" aria-hidden="true"></div>
+          <div class="jmetric">
+            <span class="jmetric-num">1</span>
+            <span class="jmetric-lbl">Published Research Paper</span>
+          </div>
+        </div>
 
-      <div class="expertise-grid">
-        <article>
-          <h3>
-            Operations
-          </h3>
+        <!-- Journey Map -->
+        <div class="journey-map">
+          <!-- SVG Winding Path (desktop) -->
+          <svg
+            class="journey-path-svg"
+            viewBox="0 0 1100 220"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="pathGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop
+                  offset="0%"
+                  style="stop-color:hsl(200,90%,55%);stop-opacity:1"></stop>
+                <stop
+                  offset="50%"
+                  style="stop-color:hsl(175,85%,45%);stop-opacity:1"></stop>
+                <stop
+                  offset="100%"
+                  style="stop-color:hsl(45,90%,60%);stop-opacity:1"></stop>
+              </linearGradient>
+            </defs>
+            <path
+              class="journey-path-line"
+              d="M 80 110 C 180 50, 280 170, 380 110 C 480 50, 580 170, 680 110 C 780 50, 880 170, 980 110 C 1020 90, 1060 95, 1100 110"
+              fill="none"
+              stroke="url(#pathGrad)"
+              stroke-width="3"
+              stroke-linecap="round"></path>
+          </svg>
 
-          <p>
-            Learning how to build and lead operations teams that can execute with excellence and adapt to change.
-          </p>
-        </article>
+          <!-- Stop Nodes -->
+          <div class="journey-stops">
+            <div class="journey-stop" style="--stop-delay:0s">
+              <div class="stop-node">
+                <span class="stop-number">01</span>
+              </div>
+              <div class="stop-card">
+                <span class="stop-category">Customer Operations</span>
+                <h3 class="stop-title">Concentrix — Airbnb</h3>
+                <p class="stop-desc">
+                  Handled customer concerns and technical issues, learning to
+                  stay calm and clear in challenging conversations. Built
+                  patience, adaptability, and problem-solving under pressure.
+                </p>
+                <div class="stop-skills">
+                  <span class="skill-tag">Patience</span>
+                  <span class="skill-tag">Adaptability</span>
+                  <span class="skill-tag">Problem-solving</span>
+                </div>
+              </div>
+            </div>
 
-        <article>
-          <h3>
-            Sales
-          </h3>
+            <div class="journey-stop stop-alt" style="--stop-delay:0.1s">
+              <div class="stop-node">
+                <span class="stop-number">02</span>
+              </div>
+              <div class="stop-card">
+                <span class="stop-category">International EdTech Sales</span>
+                <h3 class="stop-title">Bhanzu — US Market</h3>
+                <p class="stop-desc">
+                  Worked with international customers and parents, developing
+                  practical experience in objection handling, understanding
+                  prospect hesitation, and communicating value across cultures.
+                </p>
+                <div class="stop-skills">
+                  <span class="skill-tag">Objection Handling</span>
+                  <span class="skill-tag">Customer Psychology</span>
+                  <span class="skill-tag">Value Communication</span>
+                </div>
+              </div>
+            </div>
 
-          <p>
-            Learning sales strategies and techniques to drive revenue growth along with customer relationship management.
-          </p>
-        </article>
+            <div class="journey-stop" style="--stop-delay:0.2s">
+              <div class="stop-node">
+                <span class="stop-number">03</span>
+              </div>
+              <div class="stop-card">
+                <span class="stop-category">Study-Abroad Counselling</span>
+                <h3 class="stop-title">USDC Global — Learn Overseas</h3>
+                <p class="stop-desc">
+                  Continued developing customer communication and counselling
+                  skills in the study-abroad space, helping people navigate
+                  important education decisions with clarity and confidence.
+                </p>
+                <div class="stop-skills">
+                  <span class="skill-tag">Counselling</span>
+                  <span class="skill-tag">Education Guidance</span>
+                  <span class="skill-tag">Communication</span>
+                </div>
+              </div>
+            </div>
 
-        <article>
-          <h3>
-            Technology
-          </h3>
+            <div class="journey-stop stop-alt" style="--stop-delay:0.3s">
+              <div class="stop-node">
+                <span class="stop-number">04</span>
+              </div>
+              <div class="stop-card">
+                <span class="stop-category">People Who Shaped the Journey</span>
+                <h3 class="stop-title">Managers, Mentors & Founders</h3>
+                <p class="stop-desc">
+                  Learned from managers and mentors, and interacted with
+                  founders whose perspectives helped me see how vision,
+                  persistence, and execution turn ideas into something real.
+                </p>
+                <div class="stop-skills">
+                  <span class="skill-tag">Leadership</span>
+                  <span class="skill-tag">Vision</span>
+                  <span class="skill-tag">Execution</span>
+                </div>
+              </div>
+            </div>
 
-          <p>
-            AI, software and product thinking.
-          </p>
-        </article>
-
-        <article>
-          <h3>
-            Education
-          </h3>
-
-          <p>
-            Next educational goal: MBA
-          </p>
-        </article>
+            <div class="journey-stop" style="--stop-delay:0.4s">
+              <div class="stop-node stop-node-gold">
+                <span class="stop-number">05</span>
+              </div>
+              <div class="stop-card stop-card-gold">
+                <span class="stop-category">Next Milestone</span>
+                <h3 class="stop-title">Tech-Enabled Sales</h3>
+                <p class="stop-desc">
+                  My approach: listen first, understand the problem, build
+                  trust, and create value. Combining human-centred sales with
+                  technology to open new doors.
+                </p>
+                <div class="stop-skills">
+                  <span class="skill-tag skill-tag-gold">Trust</span>
+                  <span class="skill-tag skill-tag-gold">Value Creation</span>
+                  <span class="skill-tag skill-tag-gold">Tech Sales</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <style>
+        /* =============================================
+           MY SALES JOURNEY SECTION
+        ============================================= */
+
+        .journey-section {
+          padding: 120px 0;
+          border-top: 1px solid var(--border);
+          background:
+            radial-gradient(
+              ellipse at 10% 50%,
+              hsla(210, 80%, 10%, 0.55),
+              transparent 60%
+            ),
+            radial-gradient(
+              ellipse at 90% 20%,
+              hsla(175, 70%, 8%, 0.4),
+              transparent 55%
+            );
+          position: relative;
+          overflow: hidden;
+        }
+
+        .journey-inner {
+          width: min(var(--max-width, 1100px), calc(100% - 48px));
+          margin-inline: auto;
+        }
+
+        .journey-heading {
+          font-size: clamp(2rem, 4vw, 3.2rem);
+          font-weight: 800;
+          letter-spacing: -0.03em;
+          margin: 12px 0 16px;
+          line-height: 1.1;
+          background: linear-gradient(
+            135deg,
+            hsl(200, 90%, 75%) 0%,
+            hsl(175, 80%, 65%) 50%,
+            hsl(45, 85%, 65%) 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        .journey-subheading {
+          color: var(--muted);
+          font-size: 1.05rem;
+          max-width: 520px;
+          line-height: 1.7;
+          margin: 0 0 40px;
+        }
+
+        /* Metrics Strip */
+        .journey-metrics-strip {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 0;
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 16px;
+          padding: 20px 32px;
+          margin-bottom: 64px;
+          backdrop-filter: blur(12px);
+        }
+
+        .jmetric {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 4px;
+          flex: 1;
+          min-width: 100px;
+          padding: 8px 16px;
+          text-align: center;
+        }
+
+        .jmetric-num {
+          font-size: 1.75rem;
+          font-weight: 800;
+          letter-spacing: -0.04em;
+          background: linear-gradient(
+            135deg,
+            hsl(200, 90%, 72%),
+            hsl(175, 80%, 62%)
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          line-height: 1;
+        }
+
+        .jmetric-lbl {
+          font-size: 0.72rem;
+          color: var(--muted);
+          font-weight: 500;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          line-height: 1.35;
+          max-width: 120px;
+        }
+
+        .jmetric-divider {
+          width: 1px;
+          height: 40px;
+          background: rgba(255, 255, 255, 0.1);
+          flex-shrink: 0;
+          align-self: center;
+        }
+
+        @media (max-width: 700px) {
+          .journey-metrics-strip {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 16px 14px;
+            margin-bottom: 40px;
+          }
+          .jmetric-divider {
+            display: none;
+          }
+          .jmetric {
+            min-width: 0;
+            padding: 10px 8px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+          }
+          .jmetric:last-child {
+            grid-column: 1 / -1;
+          }
+          .jmetric-num {
+            font-size: 1.45rem;
+          }
+          .jmetric-lbl {
+            font-size: 0.68rem;
+            max-width: 160px;
+          }
+        }
+
+        /* Journey Map Container */
+        .journey-map {
+          position: relative;
+        }
+
+        /* SVG Path */
+        .journey-path-svg {
+          display: block;
+          width: 100%;
+          height: 60px;
+          margin-bottom: -20px;
+          opacity: 0.55;
+        }
+
+        .journey-path-line {
+          stroke-dasharray: 1600;
+          stroke-dashoffset: 1600;
+          animation: drawPath 2.2s ease forwards 0.3s;
+        }
+
+        @keyframes drawPath {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+
+        /* Stops Grid */
+        .journey-stops {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 20px;
+          position: relative;
+        }
+
+        .journey-stop {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+          opacity: 0;
+          transform: translateY(20px);
+          animation: fadeUpStop 0.55s ease forwards;
+          animation-delay: var(--stop-delay, 0s);
+        }
+
+        @keyframes fadeUpStop {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        /* Node circles */
+        .stop-node {
+          width: 52px;
+          height: 52px;
+          border-radius: 50%;
+          background: linear-gradient(
+            135deg,
+            hsl(200, 85%, 20%),
+            hsl(175, 75%, 18%)
+          );
+          border: 2px solid hsl(200, 80%, 45%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          position: relative;
+          z-index: 2;
+          transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+          box-shadow: 0 0 0 4px rgba(56, 189, 220, 0.08);
+        }
+
+        .stop-node:hover,
+        .journey-stop:hover .stop-node {
+          transform: scale(1.12);
+          box-shadow:
+            0 0 0 6px rgba(56, 189, 220, 0.18),
+            0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .stop-node-gold {
+          background: linear-gradient(
+            135deg,
+            hsl(45, 80%, 20%),
+            hsl(38, 75%, 18%)
+          );
+          border-color: hsl(45, 85%, 55%);
+          box-shadow: 0 0 0 4px rgba(240, 185, 60, 0.1);
+        }
+
+        .stop-node-gold:hover,
+        .journey-stop:hover .stop-node-gold {
+          box-shadow:
+            0 0 0 6px rgba(240, 185, 60, 0.22),
+            0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .stop-number {
+          font-size: 0.8rem;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          color: hsl(200, 90%, 70%);
+        }
+
+        .stop-node-gold .stop-number {
+          color: hsl(45, 90%, 68%);
+        }
+
+        /* Cards */
+        .stop-card {
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 14px;
+          padding: 22px 20px;
+          width: 100%;
+          transition:
+            transform 0.28s ease,
+            border-color 0.28s ease,
+            box-shadow 0.28s ease,
+            background 0.28s ease;
+          backdrop-filter: blur(8px);
+        }
+
+        .stop-card:hover,
+        .journey-stop:hover .stop-card {
+          transform: translateY(-5px);
+          border-color: rgba(56, 189, 220, 0.3);
+          background: rgba(56, 189, 220, 0.05);
+          box-shadow:
+            0 12px 36px rgba(0, 0, 0, 0.35),
+            0 0 0 1px rgba(56, 189, 220, 0.12);
+        }
+
+        .stop-card-gold:hover,
+        .journey-stop:hover .stop-card-gold {
+          border-color: rgba(240, 185, 60, 0.3);
+          background: rgba(240, 185, 60, 0.05);
+          box-shadow:
+            0 12px 36px rgba(0, 0, 0, 0.35),
+            0 0 0 1px rgba(240, 185, 60, 0.12);
+        }
+
+        .stop-category {
+          display: block;
+          font-size: 0.68rem;
+          font-weight: 700;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: hsl(200, 80%, 60%);
+          margin-bottom: 8px;
+        }
+
+        .stop-card-gold .stop-category {
+          color: hsl(45, 85%, 62%);
+        }
+
+        .stop-title {
+          font-size: 0.95rem;
+          font-weight: 700;
+          margin: 0 0 10px;
+          line-height: 1.3;
+          color: var(--text);
+          letter-spacing: -0.01em;
+        }
+
+        .stop-desc {
+          font-size: 0.82rem;
+          color: var(--muted);
+          line-height: 1.65;
+          margin: 0 0 14px;
+        }
+
+        /* Skill tags */
+        .stop-skills {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px;
+        }
+
+        .skill-tag {
+          font-size: 0.68rem;
+          font-weight: 600;
+          letter-spacing: 0.05em;
+          padding: 3px 10px;
+          border-radius: 999px;
+          background: rgba(56, 189, 220, 0.1);
+          border: 1px solid rgba(56, 189, 220, 0.2);
+          color: hsl(200, 80%, 70%);
+        }
+
+        .skill-tag-gold {
+          background: rgba(240, 185, 60, 0.1);
+          border-color: rgba(240, 185, 60, 0.22);
+          color: hsl(45, 85%, 68%);
+        }
+
+        /* =============================================
+           RESPONSIVE — Mobile vertical route
+        ============================================= */
+        @media (max-width: 900px) {
+          .journey-path-svg {
+            display: none;
+          }
+
+          .journey-stops {
+            grid-template-columns: 1fr;
+            gap: 0;
+            padding-left: 10px;
+            position: relative;
+          }
+
+          .journey-stops::before {
+            content: "";
+            position: absolute;
+            left: 17px;
+            top: 18px;
+            bottom: 18px;
+            width: 2px;
+            background: linear-gradient(
+              to bottom,
+              hsl(200, 80%, 50%),
+              hsl(175, 75%, 45%),
+              hsl(45, 80%, 55%)
+            );
+            opacity: 0.35;
+          }
+
+          .journey-stop {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 12px;
+            padding-bottom: 22px;
+          }
+
+          .stop-node {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 2;
+          }
+
+          .stop-number {
+            font-size: 0.72rem;
+          }
+
+          .stop-card {
+            flex: 1;
+            min-width: 0;
+            padding: 16px 14px;
+          }
+
+          .stop-title {
+            font-size: 0.92rem;
+            margin-bottom: 8px;
+          }
+
+          .stop-desc {
+            font-size: 0.8rem;
+            line-height: 1.55;
+            margin-bottom: 10px;
+          }
+
+          .skill-tag {
+            font-size: 0.65rem;
+            padding: 2px 8px;
+          }
+
+          .journey-metric {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 6px;
+          }
+
+          .metric-label {
+            max-width: 240px;
+          }
+        }
+
+        @media (max-width: 600px) {
+          .journey-section {
+            padding: 80px 0;
+          }
+          .journey-metric {
+            margin-bottom: 44px;
+          }
+        }
+
+        /* Respect reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+          .journey-path-line {
+            animation: none;
+            stroke-dashoffset: 0;
+          }
+          .journey-stop {
+            animation: none;
+            opacity: 1;
+            transform: none;
+          }
+        }
+      </style>
     </section>
 
-    <section id="experience" class="section">
-      <span class="section-label">
-        CAREER JOURNEY
-      </span>
+    <section id="education" class="section">
+      <span class="section-label"> EDUCATION </span>
 
-      <h2>
-        Experience
-      </h2>
+      <h2>Education & Credentials</h2>
 
       <div class="timeline">
         <div class="timeline-item">
-          <span>Present</span>
-
-          <h3>
-            Founder
-          </h3>
-
-          <p>
-            NPconscious
-          </p>
+          <h3>BE Information Science</h3>
+          <h3>&</h3>
+          <p>Diploma in human behaviour</p>
         </div>
 
         <div class="timeline-item">
-          <span>2026</span>
-
-          <h3>
-            International Sales
-          </h3>
-
-          <p>
-            Bhanzu
-          </p>
-        </div>
-
-        <div class="timeline-item">
-          <span>2025</span>
-
-          <h3>
-            International Operations
-        </h3>
-
-          <p>
-            Concentrix (Airbnb)
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <span class="section-label">
-        EDUCATION
-      </span>
-
-      <h2>
-        Education & Credentials
-      </h2>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>
-            BE Information Science
-          </h3>
-<h3> &</h3>
-          <p>
-            Diploma in human behaviour
-          </p>
-
-          
-          
-        </div>
-
-        <div class="timeline-item">
-          <h3>
-            Microsoft Azure Fundamentals
-          </h3>
-          <a 
+          <h3>Microsoft Azure Fundamentals</h3>
+          <a
             href="https://www.credly.com/badges/7ab00e03-af5a-4a03-99c9-7e264e02423e/public_url"
             target="_blank"
             rel="noopener noreferrer"
@@ -302,10 +867,8 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <div class="timeline-item">
-          <h3>
-            Microsoft Power Platform Fundamentals
-          </h3>
-          <a 
+          <h3>Microsoft Power Platform Fundamentals</h3>
+          <a
             href="https://www.credly.com/badges/861459a8-0b58-475a-8dbd-97450101926a/public_url"
             target="_blank"
             rel="noopener noreferrer"
@@ -318,29 +881,617 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <section id="contact" class="contact">
-      <h2>
-        Let's Build Something Meaningful
-      </h2>
+      <h2>Let's Build Something Meaningful</h2>
 
       <p>
-        Open to collaborations, consulting opportunities and meaningful conversations.
+        Open to collaborations, consulting opportunities and meaningful
+        conversations.
       </p>
 
       <div class="hero-actions">
-        <a
-          href="https://wa.me/918088276492"
-          class="btn btn-primary"
-        >
+        <a href="https://wa.me/918088276492" class="btn btn-primary">
           WhatsApp
         </a>
 
-        <a
-          href="mailto:nikhilparag0@gmail.com"
-          class="btn btn-secondary"
-        >
+        <a href="mailto:nikhilparag0@gmail.com" class="btn btn-secondary">
           Email
         </a>
       </div>
     </section>
   </main>
+
+  <style is:global>
+    /* =============================================
+       LEFT NAVIGATION PANEL STYLES
+       ============================================= */
+
+    /* Base Main Width & Desktop content shift */
+    #main {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    @media (min-width: 1024px) {
+      #main,
+      footer {
+        margin-left: 270px !important;
+        width: calc(100% - 270px);
+      }
+    }
+
+    /* Left Panel Container */
+    .left-panel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 270px;
+      height: 100vh;
+      background: rgba(10, 10, 14, 0.94);
+      backdrop-filter: blur(20px) saturate(160%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%);
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px 20px 24px 22px;
+      z-index: 999;
+      overflow-y: auto;
+      overflow-x: hidden;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .left-panel::-webkit-scrollbar {
+      width: 4px;
+    }
+    .left-panel::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 4px;
+    }
+
+    /* Panel Brand Header */
+    .panel-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      padding: 6px 8px;
+      border-radius: 12px;
+      transition: background 0.2s ease;
+    }
+
+    .panel-brand:hover {
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .avatar-ring {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      flex-shrink: 0;
+    }
+
+    .panel-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .status-indicator {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 11px;
+      height: 11px;
+      background: #10b981;
+      border: 2px solid #0a0a0e;
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.8);
+    }
+
+    .panel-brand-text {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .brand-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fafafa;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-title {
+      font-size: 0.72rem;
+      color: #a1a1aa;
+      line-height: 1.2;
+      margin-top: 2px;
+    }
+
+    /* Navigation Links */
+    .panel-nav {
+      margin: 28px 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel-nav-heading {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      color: #71717a;
+      text-transform: uppercase;
+      padding: 0 10px 10px;
+    }
+
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .panel-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #a1a1aa;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      border-left: 2px solid transparent;
+    }
+
+    .panel-link:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.05);
+      transform: translateX(3px);
+    }
+
+    .panel-link.active {
+      color: #2dd4bf;
+      background: linear-gradient(
+        90deg,
+        rgba(45, 212, 191, 0.14),
+        rgba(45, 212, 191, 0.02)
+      );
+      border-left-color: #2dd4bf;
+      font-weight: 600;
+    }
+
+    .link-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #52525b;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .panel-link:hover .link-dot {
+      background: #a1a1aa;
+      transform: scale(1.2);
+    }
+
+    .panel-link.active .link-dot {
+      background: #2dd4bf;
+      box-shadow: 0 0 8px rgba(45, 212, 191, 0.8);
+      transform: scale(1.4);
+    }
+
+    /* Panel Footer & Personal Link */
+    .panel-footer {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      margin-top: 24px;
+    }
+
+    .panel-personal-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px 13px;
+      border-radius: 12px;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.07),
+        rgba(255, 255, 255, 0.02)
+      );
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      text-decoration: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .panel-personal-btn:hover {
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.12),
+        rgba(255, 255, 255, 0.05)
+      );
+      border-color: rgba(255, 255, 255, 0.28);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .personal-btn-content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .personal-sparkle {
+      font-size: 1rem;
+      color: #fbbf24;
+      filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.6));
+      animation: sparklePulse 2.5s infinite ease-in-out;
+    }
+
+    @keyframes sparklePulse {
+      0%, 100% {
+        opacity: 0.7;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.15) rotate(5deg);
+      }
+    }
+
+    .personal-btn-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .personal-btn-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #fafafa;
+      line-height: 1.2;
+    }
+
+    .personal-btn-sub {
+      font-size: 0.68rem;
+      color: #a1a1aa;
+      line-height: 1.2;
+      margin-top: 2px;
+    }
+
+    .personal-arrow {
+      font-size: 0.85rem;
+      color: #a1a1aa;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .panel-personal-btn:hover .personal-arrow {
+      transform: translateX(3px);
+      color: #fafafa;
+    }
+
+    /* Quick Social Icons */
+    .panel-quick-contacts {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      padding: 2px 0;
+    }
+
+    .panel-contact-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.2s ease;
+    }
+
+    .panel-contact-icon img {
+      width: 15px;
+      height: 15px;
+      filter: invert(0.65);
+      transition: filter 0.2s ease, transform 0.2s ease;
+    }
+
+    .panel-contact-icon:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .panel-contact-icon:hover img {
+      filter: invert(1);
+      transform: scale(1.1);
+    }
+
+    /* Mobile Toggle & Backdrop */
+    .mobile-nav-toggle {
+      display: none;
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      left: auto;
+      z-index: 1002;
+      background: rgba(10, 10, 14, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 999px;
+      padding: 8px 16px;
+      align-items: center;
+      gap: 8px;
+      color: #fafafa;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      transition: all 0.2s ease;
+    }
+
+    .mobile-nav-toggle:hover {
+      background: rgba(25, 25, 30, 0.95);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .hamburger-icon {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    .nav-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 998;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    /* Mobile Responsive View (< 1024px) */
+    @media (max-width: 1023px) {
+      .mobile-nav-toggle {
+        display: inline-flex;
+      }
+
+      .left-panel {
+        transform: translateX(-100%);
+        visibility: hidden;
+        pointer-events: none;
+        box-shadow: none;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+      }
+
+      .left-panel.is-open {
+        transform: translateX(0);
+        visibility: visible;
+        pointer-events: auto;
+        box-shadow: 8px 0 32px rgba(0, 0, 0, 0.7);
+      }
+
+      .nav-backdrop.is-open {
+        display: block;
+        opacity: 1;
+      }
+    }
+
+    /* Mobile Visual Balance (< 768px) */
+    @media (max-width: 768px) {
+      .hero {
+        min-height: auto;
+        padding: 84px 20px 48px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 8.5vw, 2.75rem);
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+      }
+
+      .hero-image {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 18px;
+      }
+
+      .hero-description {
+        font-size: 0.96rem;
+        line-height: 1.6;
+        margin-bottom: 28px;
+        padding: 0 4px;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+        min-height: 46px;
+      }
+
+      .section,
+      .journey-inner,
+      .contact {
+        width: calc(100% - 36px) !important;
+        margin-inline: auto !important;
+        padding-top: 56px !important;
+        padding-bottom: 56px !important;
+      }
+
+      .section h2,
+      .journey-heading,
+      .contact h2 {
+        font-size: clamp(1.8rem, 6.5vw, 2.3rem) !important;
+        line-height: 1.15 !important;
+        margin-bottom: 20px !important;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        margin-top: 28px !important;
+      }
+
+      .project {
+        padding: 22px 18px !important;
+        min-height: auto !important;
+      }
+
+      .project h3 {
+        font-size: 1.25rem !important;
+        overflow-wrap: break-word !important;
+        word-break: break-word !important;
+      }
+
+      .timeline {
+        gap: 16px !important;
+        margin-top: 28px !important;
+      }
+
+      .timeline-item {
+        padding: 22px 18px 22px 36px !important;
+      }
+
+      .timeline-item h3 {
+        font-size: 1.1rem !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section,
+      .journey-inner,
+      .contact {
+        width: calc(100% - 32px) !important;
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+      }
+    }
+  </style>
+
+  <script>
+    function setupNavigation() {
+      const navLinks = document.querySelectorAll('.panel-link');
+      const sectionIds = ['hero', 'mission', 'work', 'experience', 'education', 'contact'];
+      const sections = sectionIds
+        .map((id) => document.getElementById(id))
+        .filter((el) => el !== null);
+
+      let currentActiveId = '';
+
+      function setActive(id) {
+        if (currentActiveId === id) return;
+        currentActiveId = id;
+        navLinks.forEach((link) => {
+          const targetSection = link.getAttribute('data-section');
+          if (targetSection === id) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+
+      // Intersection Observer for scrollspy
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const visibleEntries = entries.filter((e) => e.isIntersecting);
+          if (visibleEntries.length > 0) {
+            const topEntry = visibleEntries.reduce((prev, curr) =>
+              curr.intersectionRatio > prev.intersectionRatio ? curr : prev
+            );
+            setActive(topEntry.target.id);
+          }
+        },
+        {
+          rootMargin: '-15% 0px -65% 0px',
+          threshold: [0, 0.2, 0.5, 0.8],
+        }
+      );
+
+      sections.forEach((sec) => observer.observe(sec));
+
+      // Smooth scroll on link click
+      navLinks.forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const targetId = link.getAttribute('data-section');
+          if (!targetId) return;
+          const targetEl = document.getElementById(targetId);
+          if (targetEl) {
+            e.preventDefault();
+            targetEl.scrollIntoView({ behavior: 'smooth' });
+            history.pushState(null, '', '#' + targetId);
+            setActive(targetId);
+            closeMobileNav();
+          }
+        });
+      });
+
+      // Mobile nav drawer open / close
+      const toggleBtn = document.getElementById('mobile-nav-toggle');
+      const toggleText = document.getElementById('mobile-toggle-text');
+      const toggleIcon = document.getElementById('mobile-toggle-icon');
+      const panel = document.getElementById('left-panel');
+      const backdrop = document.getElementById('nav-backdrop');
+
+      function openMobileNav() {
+        panel?.classList.add('is-open');
+        backdrop?.classList.add('is-open');
+        toggleBtn?.setAttribute('aria-expanded', 'true');
+        if (toggleText) toggleText.textContent = 'Close';
+        if (toggleIcon) toggleIcon.textContent = '✕';
+      }
+
+      function closeMobileNav() {
+        panel?.classList.remove('is-open');
+        backdrop?.classList.remove('is-open');
+        toggleBtn?.setAttribute('aria-expanded', 'false');
+        if (toggleText) toggleText.textContent = 'Menu';
+        if (toggleIcon) toggleIcon.textContent = '☰';
+      }
+
+      toggleBtn?.addEventListener('click', () => {
+        const isOpen = panel?.classList.contains('is-open');
+        if (isOpen) {
+          closeMobileNav();
+        } else {
+          openMobileNav();
+        }
+      });
+
+      backdrop?.addEventListener('click', closeMobileNav);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', setupNavigation);
+    } else {
+      setupNavigation();
+    }
+    document.addEventListener('astro:after-swap', setupNavigation);
+  </script>
 </Layout>
