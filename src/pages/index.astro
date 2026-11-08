@@ -6,16 +6,21 @@ import Layout from "../layouts/Layout.astro";
   title="Nikhil Parag"
   description="Founder of NPconscious - Information Science graduate with experience in international operations, customer success, and global sales."
 >
-  <!-- Mobile Navigation Toggle Button -->
-  <button
-    id="mobile-nav-toggle"
-    class="mobile-nav-toggle"
-    aria-label="Toggle navigation menu"
-    aria-expanded="false"
-  >
-    <span id="mobile-toggle-icon" class="hamburger-icon">☰</span>
-    <span id="mobile-toggle-text">Menu</span>
-  </button>
+  <div class="mobile-top-actions">
+    <a href="/personal" class="mobile-lorekeeper-link">
+      <span aria-hidden="true">✦</span>
+      <span>The Lorekeeper</span>
+    </a>
+    <button
+      id="mobile-nav-toggle"
+      class="mobile-nav-toggle"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+    >
+      <span id="mobile-toggle-icon" class="hamburger-icon">☰</span>
+      <span id="mobile-toggle-text">Menu</span>
+    </button>
+  </div>
 
   <!-- Mobile Navigation Backdrop -->
   <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
@@ -38,12 +43,6 @@ import Layout from "../layouts/Layout.astro";
     <nav class="panel-nav">
       <span class="panel-nav-heading">Navigation</span>
       <ul class="nav-list">
-        <li>
-          <a href="/personal" class="panel-link">
-            <span class="link-dot"></span>
-            <span class="link-text">The Lorekeeper</span>
-          </a>
-        </li>
         <li>
           <a href="#mission" class="panel-link" data-section="mission">
             <span class="link-dot"></span>
@@ -1235,14 +1234,42 @@ Because education shouldn't just be about making money or completing a syllabus.
       transform: scale(1.1);
     }
 
-    /* Mobile Toggle & Backdrop */
-    .mobile-nav-toggle {
+    /* Mobile Top Actions & Backdrop */
+    .mobile-top-actions {
       display: none;
       position: fixed;
       top: 16px;
       right: 16px;
-      left: auto;
       z-index: 1002;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .mobile-lorekeeper-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 13px;
+      border: 1px solid rgba(251, 191, 36, 0.3);
+      border-radius: 999px;
+      background: rgba(10, 10, 14, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      color: #fbbf24;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      transition: all 0.2s ease;
+    }
+
+    .mobile-lorekeeper-link:hover {
+      background: rgba(25, 25, 30, 0.95);
+      border-color: rgba(251, 191, 36, 0.55);
+    }
+
+    .mobile-nav-toggle {
+      display: none;
       background: rgba(10, 10, 14, 0.85);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
@@ -1283,6 +1310,10 @@ Because education shouldn't just be about making money or completing a syllabus.
 
     /* Mobile Responsive View (< 1024px) */
     @media (max-width: 1023px) {
+      .mobile-top-actions {
+        display: inline-flex;
+      }
+
       .mobile-nav-toggle {
         display: inline-flex;
       }
