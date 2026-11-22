@@ -134,28 +134,43 @@ import Layout from "../layouts/Layout.astro";
   </aside>
 
   <main id="main">
-    <section id="hero" class="hero">
-      <img src="/profile.jpg" alt="Nikhil Parag" class="hero-image" />
+    <section id="hero" class="hero hero-with-bg">
+      <div class="hero-bg-wrapper" aria-hidden="true">
+        <img
+          src="/hero-bg.jpg"
+          alt=""
+          class="hero-bg-img"
+          loading="eager"
+          decoding="async"
+        />
+        <div class="hero-bg-overlay"></div>
+      </div>
 
-      <h1>Nikhil Parag</h1>
+      <div class="hero-content">
+        <div class="hero-avatar-wrapper">
+          <img src="/profile.jpg" alt="Nikhil Parag" class="hero-image" />
+        </div>
 
-      <p class="eyebrow">Founder of NPconscious</p>
+        <h1>Nikhil Parag</h1>
 
-      <p class="hero-description">
-        Information Science graduate with experience in international
-        operations, customer success, and global sales.
-      </p>
+        <p class="eyebrow">Founder of NPconscious</p>
 
-      <div class="hero-actions">
-        <a
-          href="https://npconscious.com"
-          target="_blank"
-          class="btn btn-primary"
-        >
-          Explore NPconscious
-        </a>
+        <p class="hero-description">
+          Information Science graduate with experience in international
+          operations, customer success, and global sales.
+        </p>
 
-        <a href="#contact" class="btn btn-secondary"> Get In Touch </a>
+        <div class="hero-actions">
+          <a
+            href="https://npconscious.com"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            Explore NPconscious
+          </a>
+
+          <a href="#contact" class="btn btn-secondary"> Get In Touch </a>
+        </div>
       </div>
     </section>
 
@@ -911,6 +926,129 @@ Because our vision isn't just to teach, but to help young minds grow, find their
 
   <style is:global>
     /* =============================================
+       HERO BACKGROUND & HERO SECTION
+       ============================================= */
+    .hero-with-bg {
+      position: relative;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 120px 24px 100px;
+      overflow: hidden;
+      isolation: isolate;
+      text-align: center;
+    }
+
+    .hero-with-bg::before,
+    .hero-with-bg::after {
+      display: none !important;
+    }
+
+    .hero-bg-wrapper {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .hero-bg-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 32%;
+      filter: brightness(0.68) contrast(1.08);
+      transform: scale(1.03);
+    }
+
+    .hero-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.72) 0%,
+          rgba(0, 0, 0, 0.35) 25%,
+          rgba(0, 0, 0, 0.55) 65%,
+          #000000 100%
+        ),
+        radial-gradient(
+          circle at 50% 38%,
+          rgba(0, 0, 0, 0.15) 0%,
+          rgba(0, 0, 0, 0.65) 75%
+        );
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .hero-avatar-wrapper {
+      position: relative;
+      margin-bottom: 24px;
+    }
+
+    .hero-with-bg .hero-image {
+      margin-bottom: 0;
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      box-shadow:
+        0 0 0 6px rgba(0, 0, 0, 0.5),
+        0 20px 40px rgba(0, 0, 0, 0.8),
+        0 0 45px rgba(255, 255, 255, 0.08);
+      transition:
+        transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 0.35s ease;
+    }
+
+    .hero-with-bg .hero-image:hover {
+      transform: scale(1.05);
+      border-color: rgba(255, 255, 255, 0.45);
+      box-shadow:
+        0 0 0 6px rgba(255, 255, 255, 0.2),
+        0 24px 50px rgba(0, 0, 0, 0.9),
+        0 0 55px rgba(255, 255, 255, 0.15);
+    }
+
+    .hero-with-bg h1 {
+      text-shadow: 0 4px 24px rgba(0, 0, 0, 0.9);
+      letter-spacing: -0.03em;
+    }
+
+    .hero-with-bg .eyebrow {
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .hero-with-bg .hero-description {
+      color: #e4e4e7;
+      text-shadow: 0 2px 16px rgba(0, 0, 0, 0.95);
+      font-weight: 450;
+    }
+
+    .hero-with-bg .hero-actions {
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.6));
+    }
+
+    /* =============================================
        LEFT NAVIGATION PANEL STYLES
        ============================================= */
 
@@ -1356,9 +1494,13 @@ Because our vision isn't just to teach, but to help young minds grow, find their
 
     /* Mobile Visual Balance (< 768px) */
     @media (max-width: 768px) {
-      .hero {
-        min-height: auto;
-        padding: 84px 20px 48px;
+      .hero-with-bg {
+        min-height: 100svh;
+        padding: 96px 20px 56px;
+      }
+
+      .hero-bg-img {
+        object-position: center 30%;
       }
 
       .hero h1 {
@@ -1367,10 +1509,13 @@ Because our vision isn't just to teach, but to help young minds grow, find their
         line-height: 1.15;
       }
 
-      .hero-image {
+      .hero-avatar-wrapper {
+        margin-bottom: 18px;
+      }
+
+      .hero-with-bg .hero-image {
         width: 110px;
         height: 110px;
-        margin-bottom: 18px;
       }
 
       .hero-description {
