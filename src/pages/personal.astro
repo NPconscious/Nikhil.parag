@@ -36,14 +36,14 @@ import WhatsAppFloat from "../components/WhatsAppFloat.astro";
           <div class="hero__text span-5">
             <p class="t-label">Away from the work</p>
             <h1 id="personal-title">Stories, games, and big questions</h1>
-            <p class="hero__lead">I spend my free time in imagined worlds and exploring how our own works—from mythology and history to science, psychology and society.</p>
+            <p class="hero__lead">I spend my free time in imagined worlds and exploring how our own worksâ€”from mythology and history to science, psychology and society.</p>
             <div class="btn-row">
               <a class="btn btn--primary" href="#interests">Explore my interests</a>
               <a class="btn btn--secondary" href="/professional#projects">View my work</a>
             </div>
           </div>
           <div class="hero__media span-6 start-7 personal-hero__media">
-            <img src="/personal-hero-bg.jpg" alt="Snow-covered mountains reflected in a still alpine lake" fetchpriority="high" />
+            <img src="/coding-reading-writing-journey.png" alt="Illustrated scenes of Nikhil coding, reading manga, and writing a novel" fetchpriority="high" />
           </div>
         </div>
       </div>
@@ -89,17 +89,17 @@ import WhatsAppFloat from "../components/WhatsAppFloat.astro";
           <a class="story-card" href="https://mangaanimewebtoon.com/reviews/" target="_blank" rel="noopener noreferrer">
             <span class="story-card__number">01</span><h3>Reviews</h3>
             <p>Thoughts on what is worth reading or watching, what is overhyped, and the hidden gems.</p>
-            <span class="story-card__link">Read reviews <span aria-hidden="true">↗</span></span>
+            <span class="story-card__link">Read reviews <span aria-hidden="true">â†—</span></span>
           </a>
           <a class="story-card" href="https://mangaanimewebtoon.com/news/" target="_blank" rel="noopener noreferrer">
             <span class="story-card__number">02</span><h3>News</h3>
             <p>Announcements, releases and updates from across anime, manga and webtoons.</p>
-            <span class="story-card__link">Read the latest <span aria-hidden="true">↗</span></span>
+            <span class="story-card__link">Read the latest <span aria-hidden="true">â†—</span></span>
           </a>
           <a class="story-card" href="https://mangaanimewebtoon.com/webnovel/" target="_blank" rel="noopener noreferrer">
             <span class="story-card__number">03</span><h3>Webnovels</h3>
             <p>Long-form fantasy, cultivation, isekai and system stories with room to build whole worlds.</p>
-            <span class="story-card__link">Explore webnovels <span aria-hidden="true">↗</span></span>
+            <span class="story-card__link">Explore webnovels <span aria-hidden="true">â†—</span></span>
           </a>
         </div>
       </div>
@@ -127,7 +127,7 @@ import WhatsAppFloat from "../components/WhatsAppFloat.astro";
     <footer class="footer personal-footer">
       <div class="wrap personal-footer__inner">
         <a class="nav__logo" href="/"><span class="mark" data-mark="arc" aria-hidden="true"></span>Nikhil Parag</a>
-        <a class="link" href="/professional#projects">Back to the work portfolio <span aria-hidden="true">↗</span></a>
+        <a class="link" href="/professional#projects">Back to the work portfolio <span aria-hidden="true">â†—</span></a>
       </div>
     </footer>
   </main>
@@ -155,7 +155,8 @@ import WhatsAppFloat from "../components/WhatsAppFloat.astro";
     html[data-type="service"] body { color-scheme: dark; background: var(--p-bg); color: var(--p-ink); font-family: var(--font-text); }
     html[data-type="service"] body::before { display: none; }
     html[data-type="service"] main { width: 100%; max-width: none; margin: 0; overflow: visible; }
-    html[data-type="service"] .personal-hero .hero__media > img { object-position: center 52%; }
+    html[data-type="service"] .personal-hero .hero__media > img { object-fit: contain; object-position: center; }
+    html[data-type="service"] .personal-hero__media { background: #fff3e5; }
     html[data-type="service"] .personal-hero .hero__text .t-label,
     html[data-type="service"] .personal-interests .section-head .t-label,
     html[data-type="service"] .personal-stories .section-head .t-label,
