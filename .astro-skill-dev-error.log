@@ -1,0 +1,365 @@
+06:31:39 [ERROR] spawn EPERM
+  Stack trace:
+    at ChildProcess.spawn (node:internal/child_process:440:11)
+    at Object.execFile (node:child_process:349:17)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+06:31:46 [ERROR] spawn EPERM
+  Stack trace:
+    at ChildProcess.spawn (node:internal/child_process:440:11)
+    at Object.execFile (node:child_process:349:17)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+07:53:04 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\public\about-portrait.png'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+07:58:36 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\public\portrait-professional.png'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:25:47 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\Local Statedd9b9ac9-95d4-4cbd-ba8e-468531db7cc3.tmp'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:26:13 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\GPUPersistentCache\DawnGraphiteCache\NDWEEXLJMJ6C2FVOJVYE645YJQVCYHRX\cache.db'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:26:13 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\GPUPersistentCache\DawnGraphiteCache\NDWEEXLJMJ6C2FVOJVYE645YJQVCYHRX\cache.db-wal'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:26:13 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\GPUPersistentCache\DawnGraphiteCache\NDWEEXLJMJ6C2FVOJVYE645YJQVCYHRX\cache.journal'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:38:50 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\Default\Sessions\Session_13440308930580254'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:38:50 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\Default\Sessions_Encrypted\Session_13440308930582922'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:38:50 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\Default\Sessions\Tabs_13440308930796155'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:39:25 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\Default\Sessions\Session_13440308965514872'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:39:25 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\Default\Sessions_Encrypted\Session_13440308965517627'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:39:25 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\Default\Sessions\Tabs_13440308965715585'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:39:25 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\Default\Sessions_Encrypted\Tabs_13440308965717131'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:40:56 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\Default\Sessions\Session_13440309055995888'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:40:56 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\Default\Sessions_Encrypted\Session_13440309056003869'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:40:56 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\Default\Sessions\Tabs_13440309056198427'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:40:56 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-review\Default\Sessions_Encrypted\Tabs_13440309056200608'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:41:55 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-layout-review\Default\Network\Cookies'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:41:55 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-layout-review\Default\Network\Cookies-journal'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:42:16 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-layout-review\Default\Sessions\Session_13440309117099968'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+08:42:16 [ERROR] [UnhandledRejection] Astro detected an unhandled rejection. Here's the stack trace:
+Error: EBUSY: resource busy or locked, watch 'D:\Nikhil.parag\.taste-skill\chrome-layout-review\Default\Sessions_Encrypted\Session_13440309117101970'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2532:36)
+    at createFsWatchInstance (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22195:17)
+    at setFsWatchListener (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22242:15)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22397:14)
+    at NodeFsHandler._handleFile (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22461:23)
+    at NodeFsHandler._addToNodeFs (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22703:21)
+  Hint:
+    Make sure your promises all have an `await` or a `.catch()` handler.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/unhandled-rejection/
+  Stack trace:
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    [...] See full stack trace in the browser, or rerun with --verbose.
+node:events:487
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: UNKNOWN: unknown error, lstat 'D:\Nikhil.parag\.taste-skill\chrome-review\Default\Session Storage\000003.log'
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:23896:10)
+    at NodeFsHandler._boundHandleError (file:///D:/Nikhil.parag/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:22369:43)
+    at ReaddirpStream.emit (node:events:509:20)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -4094,
+  code: 'UNKNOWN',
+  syscall: 'lstat',
+  path: 'D:\\Nikhil.parag\\.taste-skill\\chrome-review\\Default\\Session Storage\\000003.log'
+}
+
+Node.js v26.3.0

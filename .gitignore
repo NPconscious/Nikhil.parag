@@ -2,3 +2,6 @@
 .astro/
 dist/
 node_modules/
+/.agents/
+/agents/
+/.taste-skill/

@@ -2,7 +2,7 @@
 const currentPath = Astro.url?.pathname ?? '/';
 const isPersonalPage = currentPath === '/personal' || currentPath.startsWith('/personal/');
 const navCtaLabel = isPersonalPage ? 'Professional' : 'Personal';
-const navCtaHref = isPersonalPage ? '/' : '/personal';
+const navCtaHref = isPersonalPage ? '/professional' : '/personal';
 ---
 <!-- Mobile Menu -->
 <div id="mobileMenu" class="mobile-menu">
@@ -18,11 +18,11 @@ const navCtaHref = isPersonalPage ? '/' : '/personal';
       <a href={navCtaHref} class="personal-link mobile-personal-link">{navCtaLabel}</a>
     ) : (
       <>
-        <a href="/#mission">Mission</a>
-        <a href="/#building">Building</a>
-        <a href="/#work">Work</a>
-        <a href="/#experience">Experience</a>
-        <a href="/#contact">Contact</a>
+        <a href="/professional#profile">Profile</a>
+        <a href="/professional#experience">Experience</a>
+        <a href="/professional#projects">Projects</a>
+        <a href="/professional#education">Education</a>
+        <a href="/professional#contact">Contact</a>
         <a href={navCtaHref} class="personal-link mobile-personal-link">{navCtaLabel}</a>
       </>
     )}

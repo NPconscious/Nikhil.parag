@@ -1,0 +1,37 @@
+06:31:23 [types] Generated 1ms
+06:31:23 [content] Syncing content
+06:31:23 [content] Synced content
+06:31:23 [vite] Port 4321 is in use, trying another one...
+06:31:23 [vite] Port 4322 is in use, trying another one...
+
+ astro  v5.18.2 ready in 175 ms
+
+┃ Local    http://127.0.0.1:4323/
+
+06:31:23 watching for file changes...
+06:32:25 [watch] .taste-skill/gate/consistency/rendered.html
+06:32:30 [watch] .taste-skill/gate/consistency/rendered.html
+06:33:27 [watch] .taste-skill/gate/consistency/rendered.html
+06:33:33 [watch] .taste-skill/gate/consistency/rendered.html
+06:44:33 [watch] .taste-skill/gate/consistency/rendered.html
+06:44:38 [watch] .taste-skill/gate/consistency/rendered.html
+06:51:32 [watch] .taste-skill/gate/consistency/rendered.html
+06:51:36 [watch] .taste-skill/gate/consistency/rendered.html
+07:01:23 [watch] .taste-skill/gate/consistency/rendered.html
+07:01:28 [watch] .taste-skill/gate/consistency/rendered.html
+07:06:36 [watch] .taste-skill/gate/consistency/rendered.html
+07:07:25 [watch] .taste-skill/gate/consistency/rendered.html
+07:13:12 [watch] .taste-skill/gate/consistency/rendered.html
+07:13:16 [watch] .taste-skill/gate/consistency/rendered.html
+07:16:00 [watch] .taste-skill/gate/consistency/rendered.html
+07:16:04 [watch] .taste-skill/gate/consistency/rendered.html
+07:17:38 [watch] .taste-skill/gate/consistency/rendered.html
+07:17:42 [watch] .taste-skill/gate/consistency/rendered.html
+07:19:15 [watch] .taste-skill/gate/consistency/rendered.html
+07:19:20 [watch] .taste-skill/gate/consistency/rendered.html
+07:23:20 [watch] .taste-skill/gate/consistency/rendered.html
+07:23:25 [watch] .taste-skill/gate/consistency/rendered.html
+07:25:04 [watch] .taste-skill/gate/consistency/rendered.html
+07:25:08 [watch] .taste-skill/gate/consistency/rendered.html
+07:36:12 [watch] .taste-skill/gate/consistency/rendered.html
+07:36:16 [watch] .taste-skill/gate/consistency/rendered.html
