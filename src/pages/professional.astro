@@ -241,12 +241,12 @@ import WhatsAppFloat from "../components/WhatsAppFloat.astro";
     html[data-type="service"] .project-cards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--gutter); }
     html[data-type="service"] .project-card { box-sizing: border-box; width: 100%; min-width: 0; min-height: 350px; display: flex; flex-direction: column; padding: var(--s-4) 0 0; border-top: 1px solid var(--line); }
     html[data-type="service"] .project-card__top { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s-3); color: var(--p-muted); font-size: var(--t-small); }
-    html[data-type="service"] .project-card h3 { margin: var(--s-5) 0 var(--s-3); font: 400 clamp(23px,2.2vw,30px)/1.12 var(--font-display); letter-spacing: var(--display-tracking); overflow-wrap: anywhere; }
+    html[data-type="service"] .project-card h3 { min-height: 2.24em; margin: var(--s-5) 0 var(--s-3); font: 400 clamp(23px,2.2vw,30px)/1.12 var(--font-display); letter-spacing: var(--display-tracking); overflow-wrap: anywhere; }
     html[data-type="service"] .project-card h3 a { color: var(--p-ink); text-decoration: none; }
     html[data-type="service"] .project-card h3 a:hover { text-decoration: underline; text-underline-offset: 5px; }
     html[data-type="service"] .project-card h3 a span { display: inline-block; font: 400 .65em/1 var(--font-text); transition: transform .2s ease; }
     html[data-type="service"] .project-card h3 a:hover span { transform: translate(3px,-3px); }
-    html[data-type="service"] .project-card p { max-width: 42ch; margin: 0 0 var(--s-5); color: var(--p-muted); line-height: 1.55; }
+    html[data-type="service"] .project-card p { max-width: 42ch; min-height: 4.65em; margin: 0 0 var(--s-5); color: var(--p-muted); line-height: 1.55; }
     html[data-type="service"] .project-card__foot { margin-top: auto; color: var(--p-muted); font-size: var(--t-small); }
     html[data-type="service"] .education-list { display: grid; grid-template-columns: 1fr; gap: var(--s-4); margin: 0; padding: 0; list-style: none; }
     html[data-type="service"] .education-list li { min-width: 0; display: grid; align-content: start; gap: var(--s-5); padding-top: var(--s-4); border-top: 1px solid var(--line); }
@@ -285,6 +285,8 @@ import WhatsAppFloat from "../components/WhatsAppFloat.astro";
       html[data-type="service"] .project-cards,
       html[data-type="service"] .education-list { grid-template-columns: 1fr; gap: var(--s-5); }
       html[data-type="service"] .project-cards { grid-template-columns: 1fr; }
+      html[data-type="service"] .project-card h3,
+      html[data-type="service"] .project-card p { min-height: 0; }
     }
   </style>
   <WhatsAppFloat />
