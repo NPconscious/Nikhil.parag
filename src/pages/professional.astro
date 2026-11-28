@@ -1,6 +1,5 @@
 ---
 import TasteLayout from "../layouts/TasteLayout.astro";
-import WhatsAppFloat from "../components/WhatsAppFloat.astro";
 ---
 
 <TasteLayout
@@ -22,9 +21,6 @@ import WhatsAppFloat from "../components/WhatsAppFloat.astro";
         <div class="nav__item"><a class="nav__link" href="/personal">Personal</a></div>
         <div class="nav__item"><a class="nav__link" href="#contact">Contact</a></div>
       </nav>
-      <div class="nav__actions">
-        <a class="btn btn--primary" href="mailto:nikhilparag0@gmail.com">Email Nikhil</a>
-      </div>
       <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Open navigation menu">
         <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></svg>
       </button>
@@ -137,45 +133,29 @@ import WhatsAppFloat from "../components/WhatsAppFloat.astro";
 
   </main>
 
-  <footer class="footer closing" id="contact" aria-labelledby="contact-h">
+  <footer class="footer closing" id="contact">
     <div class="wrap">
-      <div class="closing__cta close--type">
-        <div class="section-head">
-          <h2 id="contact-h">Contact Nikhil</h2>
-          <p>Open to collaborations, consulting opportunities and conversations.</p>
+      <div class="footer-main">
+        <div class="footer-sites-column">
+          <div class="footer-sites">
+            <span>My Sites</span>
+            <div class="footer-site-list">
+              <a class="footer-site-card" href="https://nikhilparag.com/" target="_blank" rel="noopener noreferrer"><img src="/favicon.svg" alt="" width="48" height="48" loading="lazy" /><span>Nikhil Parag</span></a>
+              <a class="footer-site-card" href="https://mangaanimewebtoon.com/" target="_blank" rel="noopener noreferrer"><img src="/mangaanimewebtoon-site-logo.ico" alt="" width="48" height="48" loading="lazy" /><span>Manga Anime Webtoon</span></a>
+              <a class="footer-site-card" href="https://npconscious.com/" target="_blank" rel="noopener noreferrer"><img src="/npconscious-footer-mark.png" alt="" width="48" height="48" loading="lazy" /><span>NPconscious.com</span></a>
+            </div>
+          </div>
         </div>
-        <a class="btn btn--primary btn--xl" href="mailto:nikhilparag0@gmail.com">
-          Email Nikhil
-          <svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8" /><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5" /></svg>
-        </a>
+        <section class="footer-say-hi" aria-labelledby="footer-say-hi-title">
+          <h2 id="footer-say-hi-title">Say Hi at <a class="footer-contact__email" href="mailto:nikhilparag@npconscious.com">nikhilparag@npconscious.com</a></h2>
+          <nav class="footer-contact" aria-label="Contact Nikhil">
+            <a class="footer-contact__whatsapp" href="https://wa.me/918088276492" target="_blank" rel="noopener noreferrer"><img class="footer-contact__icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="" width="20" height="20" />WhatsApp</a>
+            <a href="tel:+918088276492"><svg class="footer-contact__icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h3l2 5-2.2 1.8a15 15 0 0 0 6.4 6.4L16 14l5 2v3c0 1.1-.9 2-2 2C10 21 3 14 3 5c0-1.1.9-2 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>Call 8088276492</a>
+            <a href="https://www.instagram.com/nikhil_lord_of_edo/" target="_blank" rel="noopener noreferrer"><img class="footer-contact__icon footer-contact__icon--light" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="" width="20" height="20" />Instagram</a>
+          </nav>
+        </section>
       </div>
-      <div class="closing__links">
-        <div class="grid">
-          <div class="span-4 footer-brand">
-            <a class="nav__logo" href="/"><span class="mark" data-mark="arc" aria-hidden="true"></span>Nikhil Parag</a>
-            <p class="footer__lede">Operations, sales and education.</p>
-          </div>
-          <div class="footer__col span-2 start-5">
-            <h3>Experience</h3>
-            <ul><li><a href="#experience">Career experience</a></li></ul>
-          </div>
-          <div class="footer__col span-2">
-            <h3>Projects</h3>
-            <ul><li><a href="#projects">Research and projects</a></li></ul>
-          </div>
-          <div class="footer__col span-2">
-            <h3>Education</h3>
-            <ul><li><a href="#education">Credentials</a></li></ul>
-          </div>
-          <div class="footer__col span-2">
-            <h3>Contact</h3>
-            <ul><li><a href="mailto:nikhilparag0@gmail.com">Email Nikhil</a></li></ul>
-          </div>
-        </div>
-        <div class="footer__legal">
-          <span>© {new Date().getFullYear()} Nikhil Parag</span>
-        </div>
-      </div>
+      <div class="footer__legal"><span>&copy; {new Date().getFullYear()} Nikhil Parag</span></div>
     </div>
   </footer>
 
@@ -261,6 +241,11 @@ import WhatsAppFloat from "../components/WhatsAppFloat.astro";
     html[data-type="service"] .footer__col ul { list-style: none; padding: 0; margin: 0; }
     html[data-type="service"] .footer__col li { margin: 0; }
     html[data-type="service"] .footer__col a { font-size: var(--t-small); }
+    html[data-type="service"] .footer-contact { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: var(--s-6); padding-top: var(--s-5); border-top: 1px solid var(--line); }
+    html[data-type="service"] .footer-contact__label { width: 100%; color: var(--p-muted); font-size: var(--t-small); }
+    html[data-type="service"] .footer-contact a { display: inline-flex; align-items: center; min-height: 44px; padding: 9px 14px; border: 1px solid color-mix(in oklab,var(--p-ink) 24%,transparent); border-radius: 999px; color: var(--p-ink); font-size: var(--t-small); text-decoration: none; overflow-wrap: anywhere; }
+    html[data-type="service"] .footer-contact .footer-contact__whatsapp { gap: 8px; border-color: #25d366; background: #25d366; color: #102b19; }
+    html[data-type="service"] .footer-contact__whatsapp img { flex: none; width: 20px; height: 20px; }
     html[data-type="service"] .footer__legal { border-top: 1px solid var(--line); }
     @media (max-width: 1023px) {
       html[data-type="service"] .career-education-section { --h: 2; }
@@ -288,6 +273,31 @@ import WhatsAppFloat from "../components/WhatsAppFloat.astro";
       html[data-type="service"] .project-card h3,
       html[data-type="service"] .project-card p { min-height: 0; }
     }
+    html[data-type="service"] footer.closing { height: auto; min-height: 0; padding: clamp(28px, 4vw, 56px) 0; border-top: 0; }
+    html[data-type="service"] footer.closing > .wrap { height: auto; }
+    html[data-type="service"] .footer-main { display: grid; grid-template-columns: minmax(220px, .75fr) minmax(0, 1.25fr); gap: clamp(32px, 7vw, 100px); align-items: start; }
+    html[data-type="service"] .footer-main > .footer-brand { grid-column: auto; }
+    html[data-type="service"] .footer-say-hi h2 { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: .22em; row-gap: 0; margin: 0 0 20px; font: 400 clamp(32px, 4vw, 48px)/1.05 var(--font-display); letter-spacing: var(--display-tracking); }
+    html[data-type="service"] .footer-contact { display: flex; flex-direction: column; align-items: stretch; gap: 0; width: 100%; margin: 0; padding: 0; border: 0; }
+    html[data-type="service"] .footer-contact a { display: inline-flex; justify-self: auto; width: 100%; max-width: 100%; align-items: center; justify-content: flex-start; gap: 12px; min-height: 64px; min-width: 0; padding: 18px 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; color: var(--p-ink); font-size: var(--t-small); line-height: 1.4; text-decoration: none; white-space: nowrap; transition: color .18s ease; }
+    html[data-type="service"] .footer-contact a:hover { color: var(--p-accent); }
+    html[data-type="service"] .footer-contact__icon { flex: none; width: 22px !important; height: 22px !important; object-fit: contain; }
+    html[data-type="service"] .footer-contact__icon--light { filter: brightness(0) saturate(100%) invert(44%) sepia(78%) saturate(2450%) hue-rotate(314deg) brightness(102%) contrast(101%) !important; }
+    html[data-type="service"] .footer-contact .footer-contact__whatsapp { border-color: transparent; border-bottom-color: var(--line); background: transparent; color: var(--p-ink); }
+    html[data-type="service"] .footer-say-hi h2 .footer-contact__email { display: inline-block; width: auto; min-height: 0; padding: 0; border: 0; border-radius: 0; color: #ff5b5b; font: 500 clamp(28px, 3vw, 40px)/.95 "Caveat", cursive; letter-spacing: 0; text-decoration: none; overflow-wrap: anywhere; }
+    html[data-type="service"] .footer-contact__whatsapp img { flex: none; width: 22px; height: 22px; filter: brightness(0) saturate(100%) invert(57%) sepia(81%) saturate(451%) hue-rotate(89deg) brightness(94%) contrast(91%); }
+    html[data-type="service"] .footer-sites { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 20px; font-size: var(--t-small); }
+    html[data-type="service"] .footer-sites { display: block; margin-top: 0; }
+    html[data-type="service"] .footer-sites > span { display: block; margin-bottom: 10px; color: var(--p-muted); font-size: 2em; line-height: 1.1; }
+    html[data-type="service"] .footer-site-list { display: grid; gap: 0; }
+    html[data-type="service"] .footer-site-card { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line); color: var(--p-ink); font-size: var(--t-small); text-decoration: none; transition: color .18s ease; }
+    html[data-type="service"] .footer-site-card:hover { color: var(--p-accent); }
+    html[data-type="service"] .footer-site-card img { display: block; flex: none; width: 48px; height: 48px; object-fit: contain; }
+    html[data-type="service"] .footer__legal { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--p-muted); font-size: var(--t-small); }
+    @media (max-width: 767px) {
+      html[data-type="service"] .footer-main { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+      html[data-type="service"] .footer-contact { grid-template-columns: minmax(0, 1fr); }
+      html[data-type="service"] .footer-contact a { width: fit-content; max-width: 100%; }
+    }
   </style>
-  <WhatsAppFloat />
 </TasteLayout>
